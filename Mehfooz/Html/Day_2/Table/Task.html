@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        .myTable {
+            border: 2px outset gray;
+        }
+
+        .myTD,
+        .myTH {
+            border: 2px inset gray;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="500" height="400" class="myTable">
+
+        <caption style="text-transform: capitalize;font-size: xx-large; font-weight: 600;">Grocery Tally</caption>
+        <colgroup>
+        <col span="4">
+        <col style="background-color: beige;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="myTH">Sr no</th>
+                <th class="myTH">items name</th>
+                <th class="myTH">qty</th>
+                <th class="myTH">amout</th>
+                <th class="myTH">total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color: aqua;">
+                <td class="myTD">1</td>
+                <td class="myTD">sugar</td>
+                <td class="myTD">5kg</td>
+                <td class="myTD">66kg/per</td>
+                <td class="myTD">339rs</td>
+            </tr>
+            <tr style="background-color: blanchedalmond;">
+                <td class="myTD">2</td>
+                <td class="myTD">oil</td>
+                <td class="myTD">10L</td>
+                <td class="myTD">180L/per</td>
+                <td class="myTD">1800rs</td>
+            </tr>
+            <tr style="background-color: aquamarine;">
+                <td class="myTD">3</td>
+                <td class="myTD">bread</td>
+                <td class="myTD">1</td>
+                <td class="myTD">35rs</td>
+                <td class="myTD">35rs</td>
+            </tr>
+            <tr style="background-color: tomato;">
+                <td class="myTD">4</td>
+                <td class="myTD">milk</td>
+                <td class="myTD">10L</td>
+                <td class="myTD">75L/per</td>
+                <td class="myTD">750rs</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td class="myTD" colspan="2">grand total</td>
+                <td class="myTD">4</td>
+                <td class="myTD" style="background-color: beige;" colspan="2">2924rs</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>
