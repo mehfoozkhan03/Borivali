@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task</title>
+</head>
+<body>
+
+ <h1>Application Form</h1>
+  <form>
+<label for="name">First Name:</label> <input id="name" type="text" minlength="1" maxlength="20" required placeholder="Enter your first name...">
+                    <label for="name">Last Name:</label>
+<input id="name" type="text" minlength="1" maxlength="20" required placeholder="Enter your last name...">
+<br>
+<br>
+<label for="Birth">Date of Birth:</label> <input type="date" id="Birth" placeholder="Enter your date of birth..." required>
+               <label for="Age">Age:</label>
+               <input type="number" id="Age" min="1" max="150" required placeholder="Enter your age...">
+<br>
+<br>
+
+<label for="Gender">Gender:</label>  
+<select id="Gender" required>
+    <option value="">Select Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+</select> 
+<label for="Email">Email:</label>
+<input type="email" id="Email" minlength="1" maxlength="100" required placeholder="Enter your email address...">
+<br>
+<br>
+
+<label for="Available">Position Available:</label>
+<input type="radio" id="Junior Developer" name="Available"required>Junior Developer
+<input type="radio" id="Mid Developer" name="Available"required>Mid Developer
+<input type="radio" id="Senior Developer" name="Available"required>Senior Developer
+<br>
+<br>
+<label for="language">Programming Language:</label>
+<input type="checkbox" id="Python" name="language">Python
+<input type="checkbox" id="Java" name="language">Java
+<input type="checkbox" id="JavaScript" name="language">JavaScriptg
+
+
+
+
+  </form>  
+    
+</body>
+</html>
