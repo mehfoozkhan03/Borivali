@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas in html</title>
+</head>
+<body>
+    
+    <canvas id="myCanvas" name="canva_design" width="800" height="600" style="border:1px solid gray">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+
+    <script>
+        // here we write canvas code...
+
+        const canvas = document.querySelector("#myCanvas");
+        const dis = canvas.getContext("2d");
+
+        // draw rectangle
+        dis.fillStyle = "red";
+        dis.fillRect(100, 100, 209, 160); //x, y, width, height
+
+        // draw circle
+        dis.fillStyle = "blue";
+        dis.arc(300, 200, 50, 0, 360); // x, y, radius, start angle, end angle
+        dis.fill();
+
+        // draw line
+   
+
+        //draw Watch
+        // dis.fillStyle = "gray";
+        dis.beginPath();
+        dis.arc(600, 200, 100, 0, 200); //x, y, radius, start angle, end angle
+        dis.moveTo(540, 170)
+        dis.lineTo(610,220)
+        dis.lineTo(550,220)
+        dis.stroke();
+    
+        
+    </script>
+    
+</body>
+</html>
