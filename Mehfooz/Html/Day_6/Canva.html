@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas in hmtl</title>
+  </head>
+
+  <body>
+    <canvas
+      style="border: 2px solid gray"
+      width="800"
+      height="600"
+      name="canva_design"
+      id="canvas"
+    ></canvas>
+    <script>
+      // canvas code we write here....
+      // dom manupulation
+
+      // node -> change
+
+      const canvas = document.querySelector("#canvas");
+
+      const dis = canvas.getContext("2d");
+
+      // rectangle
+
+      dis.fillStyle = "red";
+      dis.fillRect(100, 200, 209, 160); // x | y | w | h
+
+      // circle
+
+      dis.fillStyle = "green";
+      dis.arc(300, 200, 50, 0, 360); // x | y | r | sA |eA
+      dis.fill();
+
+      // line
+      dis.beginPath();
+      dis.moveTo(10, 60); // x | y
+      dis.lineTo(90, 80); // x | y
+      dis.strokeStyle = "red";
+      dis.lineWidth = 4;
+      dis.stroke();
+
+      // second line
+      dis.beginPath();
+      dis.moveTo(80, 160); // x | y
+      dis.lineTo(288, 120); // x | y
+      dis.strokeStyle = "yellow";
+      dis.lineWidth = 4;
+      dis.stroke();
+
+      //   build ghadi with canvas...
+    </script>
+  </body>
+</html>

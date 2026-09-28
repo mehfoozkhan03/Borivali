@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas width="800" height="600" style="border: 2px solid red"></canvas>
+
+    <script>
+      const canvas = document.querySelector("canvas");
+
+      const dis = canvas.getContext("2d");
+
+      // circle
+
+      dis.fillStyle = "red";
+      dis.arc(400, 300, 180, 0, 360);
+      //   dis.arc(400, 300, 180, 0, 2 * Math.PI);
+      dis.fill();
+
+      // rectangle
+      dis.beginPath();
+      dis.fillStyle = "green";
+      dis.rect(250, 120, 300, 150);
+      dis.fill();
+
+      // line
+
+      dis.beginPath();
+      dis.moveTo(0, 0); // x1 y1
+      dis.lineTo(800, 600); // x2 y2
+      dis.strokeStyle = "gray";
+      dis.lineWidth = 15;
+      dis.stroke();
+    </script>
+  </body>
+</html>
