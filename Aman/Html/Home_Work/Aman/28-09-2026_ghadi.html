@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghadi</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" name="canva_design" width="500" height="500" style="border:1px solid gray; border-radius:50%";>
+
+    </canvas>
+
+    <script>
+        const canvas = document.querySelector("#myCanvas");
+        const dis = canvas.getContext("2d");
+
+        dis.beginPath();
+        dis.arc(250, 250, 5, 0, 2 * Math.PI);
+        dis.fillStyle = "black";
+        dis.fill();
+
+        // Hour
+        dis.beginPath();
+        dis.moveTo(250, 250);
+        dis.lineTo(250, 40);
+        dis.stroke();
+
+        // Minute
+        dis.beginPath();
+        dis.moveTo(250, 250);
+        dis.lineTo(410, 250);
+        dis.stroke();
+
+        // numbers 1-12
+        dis.font = "20px Arial";
+
+        dis.fillText("12", 239, 35);
+        dis.fillText("1", 345, 65);
+        dis.fillText("2", 415, 145);
+        dis.fillText("3", 435, 255);
+        dis.fillText("4", 410, 345);
+        dis.fillText("5", 345, 425);
+        dis.fillText("6", 239, 465);
+        dis.fillText("7", 145, 425);
+        dis.fillText("8", 80, 345);
+        dis.fillText("9", 70, 255);
+        dis.fillText("10", 75, 145);
+        dis.fillText("11", 145, 65);
+        
+    </script>
+
+</body>
+
+</html>

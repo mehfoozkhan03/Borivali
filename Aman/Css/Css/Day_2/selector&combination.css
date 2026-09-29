@@ -1,0 +1,40 @@
+/* attribute selector */
+/* [name="email"]{
+    color:red;
+} */
+
+
+/* Decendent combinator ( )*/
+/* div h3{
+    color:aqua;
+} */
+
+
+/* child combinator (>)*/
+/* div > h3{
+    color:brown;
+} */
+
+
+/* next sibling  */
+/* div + h2{
+    color:chocolate
+} */
+
+
+/* sub sibling */
+/* div ~ h4, h3{
+    color:chartreuse;
+} */
+
+
+/* nesting selector */
+main > div{
+    background: tomato;
+    border:7px solid red;
+    & > *:hover{
+        color:aqua;
+    }
+}
+
+

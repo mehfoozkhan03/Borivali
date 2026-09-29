@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas in html</title>
 </head>
+
 <body>
-    
+
     <canvas id="myCanvas" name="canva_design" width="800" height="600" style="border:1px solid gray">
         Your browser does not support the HTML canvas tag.
     </canvas>
@@ -27,19 +29,32 @@
         dis.fill();
 
         // draw line
-   
+
 
         //draw Watch
         // dis.fillStyle = "gray";
         dis.beginPath();
-        dis.arc(600, 200, 100, 0, 200); //x, y, radius, start angle, end angle
-        dis.moveTo(540, 170)
-        dis.lineTo(610,220)
-        dis.lineTo(550,220)
+        dis.arc(500, 300, 100, 0, 2 * Math.PI);
         dis.stroke();
-    
-        
+
+        dis.beginPath();
+        dis.fillStyle = "gray";
+        dis.arc(500, 300, 3, 0,2 * Math.PI);
+        dis.fill();
+
+        dis.beginPath();
+
+        dis.moveTo(500, 300);
+        dis.lineTo(535, 270);
+        dis.moveTo(500, 300);
+        dis.lineTo(500, 220);
+
+        dis.stroke();
+
+
+
     </script>
-    
+
 </body>
+
 </html>
