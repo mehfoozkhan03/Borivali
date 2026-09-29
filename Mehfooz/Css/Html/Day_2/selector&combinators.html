@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector and combinator</title>
+    <style>
+      /* attribute selector's */
+      [name="email"] {
+        color: red;
+      }
+
+      /* Decendent Combinator's  ( ) */
+      /* 
+      div  h3 {
+            background: tomato;
+        } */
+
+      /* Child Combinator's  (>)*/
+
+      /* div > h3 {
+        color: green;
+      } */
+
+      /* next-sibling (+) && sub-sibling (~) */
+
+      /* div ~ h1 {
+        background-color: black;
+        color: red;
+      }
+       */
+      /* h1 + h1 {
+        background-color: black;
+        color: red;
+      } */
+
+      /* nesting selector (&)*/
+
+      main > div {
+        background: tomato;
+        border: 7px solid red;
+        &  > *:hover {
+          color: blue;
+        }
+      }
+      
+      /* h1:hover{
+        color: blue;
+     } */
+    </style>
+  </head>
+  <body>
+    <!-- 
+    * selector :- 
+                1. universal 
+                2. id
+                3. class
+                4. elements | name
+                5. attribute   
+
+    ? Combinator's :-    
+                1. Decendent ( ) {content present then  effect}
+                2. Child (>) {direct child effect}
+                3. next-sibling (+)
+                4. sub-sibling (~) 
+    -->
+
+    <!--  attribute selector's -->
+
+    <!-- <input type="email" name="email" id="" placeholder="hello this is email">
+    <input type="text" name="email" id="" placeholder="hello this is name">
+    <p name="email">hello</p> -->
+
+    <!-- Decendent Combinator's  -->
+    <!-- <div>
+      <h3>hello-1</h3>
+      <h3>hello-2</h3>
+      <h3>hello-3</h3>
+      <h3>hello-4</h3>
+      <h4>hello-5</h4>
+       <span>
+        <h3>hello-1</h3>
+      </span>
+      <span>
+        <h3>hello-2</h3>
+      </span>
+      <span>
+        <h3>hello-3</h3>
+      </span>
+    </div>
+
+    <h3>hello from outside</h3> -->
+
+    <!-- Child Combinator's  -->
+
+    <!-- <div>
+      <span>
+        <h3>hello-1</h3>
+      </span>
+      <span>
+        <h3>hello-2</h3>
+      </span>
+      <span>
+        <h3>hello-3</h3>
+      </span>
+      <span>
+        <h3>hello-4</h3>
+      </span>
+      <span>
+        <h4>hello-5</h4>
+      </span>
+
+      <h3>hello-6</h3>
+      <h3>hello-7</h3>
+      <h3>hello-8</h3>
+    </div>
+
+    <h3>hello from outside</h3> -->
+
+    <!-- Next-Sibling (+) -->
+
+    <!-- <div>
+      <h1>hello from div</h1>
+    </div>
+    <h1>hello from outside div</h1>
+    <h1>hello from outside div</h1>
+    <h1>hello from outside div</h1>
+    <h1>hello from outside div</h1> -->
+
+    <!-- nesting selector -->
+
+    <main>
+      <div>
+        <h2>hello</h2>
+      </div>
+    </main>
+  </body>
+</html>
