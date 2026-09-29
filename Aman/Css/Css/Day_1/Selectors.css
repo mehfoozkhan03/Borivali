@@ -1,0 +1,33 @@
+/* Universal selector */
+*{
+    color:yellow;
+}
+
+/* element selector | name selector */
+h1{
+    color:aqua;
+}
+
+/* class denoted as "." */
+.naam{
+    color:brown;
+}
+
+/* id denoted as "#" */
+/* #naam2{
+    color:chocolate;
+} */
+
+#naam3{
+    color:darkblue;
+}
+
+div{
+    border-width: 60;
+    border-style: dotted;
+    color:crimson;
+    border-radius: 50%;
+    /* color: goldenrod; */
+    background-color: red;
+    background: green;
+}
