@@ -1,0 +1,33 @@
+
+h1{
+    /* border-style: solid;
+    border-color: red;
+    border-width: 2px; */
+
+    border: 2px solid red;
+    padding: 10px;
+    /* margin: 10px; */
+
+
+    /* outline */
+    /* outline-style: dotted;
+    outline-color: aqua;
+    outline-width: 3px; */
+
+    outline: 3px dotted aqua;
+}
+
+button{
+        background:transparent;
+        border: 1px solid gray;
+        border-radius: 50px;
+        padding: 10px 20px;
+        border-top: 0;
+        border-bottom: 0;
+
+        /* outline */
+        outline: 1px solid gray;
+        outline-offset: -4px;
+
+    }
+

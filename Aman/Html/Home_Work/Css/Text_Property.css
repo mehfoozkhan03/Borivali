@@ -1,0 +1,12 @@
+p{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 30px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 2;
+    text-justify: auto;
+    text-shadow: 2px 2px 5px gray;
+}
