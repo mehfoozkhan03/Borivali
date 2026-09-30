@@ -1,0 +1,114 @@
+/* selector's */
+
+/* 
+* SELECTOR'S
+            1. Elements | Name 
+            2. Class [.]
+            3. Id [#]
+            4. Attributes ([type=""])
+            5. Universal [*]
+            6. nested selector (&)
+*/
+
+/* * {
+  background: #000 !important;
+  color: #fff !important;
+} */
+
+/* .greet {
+  color: rgb(28, 0, 128);
+  background: green;
+}
+
+h1 {
+  color: tomato;
+  background: rgb(128, 0, 0);
+}
+
+#greet {
+  color: rgb(147, 165, 42);
+  background: rgb(0, 255, 106);
+} */
+
+/* 
+input[name="name"] {
+  color: red ;
+}
+
+*/
+
+[name="name"] {
+  color: red;
+}
+
+div > p {
+  color: blue;
+  cursor: pointer;
+
+  &:hover {
+    color: tomato;
+    background: teal;
+  }
+}
+
+
+span>strong{
+color: red;
+background: black;
+
+&:hover{
+color: tomato;
+background: teal;
+}
+
+}
+
+
+
+
+
+/* combinator's */
+
+/* 
+1. Decendent ( )
+2. Child (>)
+3. next-sibling (+)
+4. next-sub-sibling (~)
+
+
+*/
+
+/* decendent " "*/
+
+/* div h2{
+  color:green
+}
+ */
+
+/* child  ">"*/
+/* div >  h1{
+  color:red
+} */
+
+/* next sibiling "+" */
+
+div ~ h1 {
+  color: brown;
+}
+
+div + h1 {
+  color: yellow;
+}
+
+div:nth-child(7) > h3,
+div:nth-child(7) > h4 {
+  color: tomato;
+}
+
+/* div:nth-child(7) >* {
+  color: tomato;
+} */
+
+/* div:nth-child(7) >*:last-child {
+  color: tomato;
+} */

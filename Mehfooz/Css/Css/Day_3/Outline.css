@@ -18,16 +18,15 @@ border-width: 2px; */
   height: 100px;
 }
 
-button{
-    background: transparent;
-    border: 1px solid gray;
-    border-radius: 50px;
-    padding: 10px 20px;
-    border-top: 0;
-    border-bottom: 0;
+button {
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding: 10px 20px;
+  border-top: 0;
+  border-bottom: 0;
 
-    /* outline */
+  /* outline */
   outline: 1px solid gray;
   outline-offset: -4px;
-
 }
