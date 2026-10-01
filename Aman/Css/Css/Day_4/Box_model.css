@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+}
+
+h1{
+    width: 1440px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    /* border: solid 10px red; */
+}
+
+h2{
+    /* font-family: "Isometra"; */
+    font-family: "Bebas Neue", sans-serif;
+    font-size: xx-large;
+    font-weight: normal;
+    text-transform: capitalize;
+}
