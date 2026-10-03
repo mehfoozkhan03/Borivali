@@ -1,0 +1,465 @@
+/* General CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color: #222;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f4a261;
+    font-size: 28px;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+
+/* Home Hero */
+
+.hero {
+    height: 600px;
+    width: 100%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("img/img4.avif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+
+    background-color: #f4a261;
+    color: white;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e76f51;
+}
+
+
+/* Welcome Section */
+
+.welcome-section {
+    text-align: center;
+    padding: 50px 20px;
+    overflow: hidden;
+}
+
+.welcome-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+.welcome-section marquee {
+    display: block;
+    width: 100%;
+    height: 220px;
+}
+
+.welcome-section marquee img {
+    display: inline-block;
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+/* Cards */
+
+.Dishes-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 100%;
+    height: 380px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.card h3 {
+    margin: 12px 0 5px;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card span {
+    margin-top: auto;
+    padding-top: 10px;
+    color: #e76f51;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Page Header */
+
+.page-header {
+    background-color: #f4a261;
+    color: white;
+
+    text-align: center;
+
+    padding: 10px 10px;
+}
+
+.page-header h2 {
+    font-size: 30px;
+}
+
+
+/* Menu */
+
+section {
+    padding: 20px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin: 30px auto;
+    
+}
+
+
+.menu-item {
+    height: 380px;
+    padding: 18px;
+    box-sizing: border-box;
+
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin: 18px 0 10px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.menu-item strong {
+    color: #f0644b;
+    font-size: 22px;
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.menu-item {
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* About */
+
+.about-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    align-items: center;
+}
+
+.about-image {
+    height: 350px;
+
+    background-color: #ddd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.about-image div {
+    font-size: 100px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+
+/* Contact */
+
+.contact-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+form button {
+    padding: 12px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #e76f51;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d65a3a;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        gap: 20px;
+    }
+}
