@@ -1,0 +1,56 @@
+
+header {
+    background-color: #fdad00;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+header a{
+    margin: 7px;
+}
+
+header i {
+    margin-right: 5px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 1400px;
+    margin: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #fdad00;
+}
+
+h2 {
+    color: #fdad00;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+
+ul li {
+    margin-bottom: 8px;
+}
+
+
+footer {
+    background-color: #fdad00;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
