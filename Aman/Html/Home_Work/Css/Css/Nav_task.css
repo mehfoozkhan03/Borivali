@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Instagram Navbar */
+
+
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 54px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+
+.logo {
+    font-family: cursive;
+    font-size: 24px;
+    font-weight: bold;
+    width: 180px;
+}
+
+.search-box {
+    width: 195px;
+    height: 30px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-box .material-icons {
+    font-size: 16px;
+    color: #8e8e8e;
+}
+
+.search-box input {
+    width: 120px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+
+.nav-icons {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-icons .material-icons {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-icons img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+
+/* Facebook Navbar  */
+
+
+.fb-navbar {
+    height: 56px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 70px;
+
+}
+
+
+.fb-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.fb-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.fb-search {
+    width: 44px;
+    height: 44px;
+    background-color: #f0f2f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fb-search .material-icons {
+    color: #606770;
+    font-size: 25px;
+}
+
+
+.fb-center {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+
+.fb-icon {
+    width: 65px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.fb-icon .material-icons {
+    font-size: 30px;
+    color: black;
+}
+
+
+.fb-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.right-icon {
+    width: 42px;
+    height: 42px;
+    background-color: #e4e6eb;    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.right-icon .material-icons {
+    font-size: 25px;
+    color: black;
+}
