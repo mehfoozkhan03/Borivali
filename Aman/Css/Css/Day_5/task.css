@@ -21,13 +21,19 @@ nav {
 }
 
 h1 img{
-    height: 50px;
-    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 h2 img{
-    height: 50px;
-    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
 }
 nav ul {
     display: flex;
@@ -43,6 +49,7 @@ nav li {
     list-style: none;
     /* border: 2px dashed teal; */
     justify-content: center;
+    cursor: pointer;
 }
 
 .pro{
