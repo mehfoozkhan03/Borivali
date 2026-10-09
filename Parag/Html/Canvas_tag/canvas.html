@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva in html</title>
+</head>
+<body>
+    <canvas
+        style="border: 2px solid black"
+        width="800"
+        height="800"
+        name="Canvas_Design"
+        id="canvas"
+    ></canvas>
+
+    <script>
+        const canvas = document.querySelector ("#canvas");
+        const dis = canvas.getContext("2d");
+
+        //rectangle
+        dis.fillStyle = "red";
+        dis.fillRect(100, 100, 200, 100); // x | y | w | h
+
+        //circle
+        dis.fillStyle = "green";
+        dis.arc(300 ,300, 50 ,0, 360);//x | y | r | sa | ea
+        dis.fill();
+
+        //line
+
+
+        //watch
+        dis.beginPath();
+        dis.moveTo(550,550);
+        // dis.lineTo(500, 400);
+        dis.arc(500, 400, 100, 0, 360);
+        dis.stroke();
+
+
+    </script>
+</body>
+</html>

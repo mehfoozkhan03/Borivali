@@ -1,0 +1,31 @@
+*{
+    color:rgb(86, 16, 2);
+}
+
+
+/* element selector | name selector */
+
+h1{
+    color: red;
+}
+
+/* class denoted as "." */
+
+.my_name{
+    color: blue;
+}
+
+
+/* id denoted as "#" */
+#my_id{
+    color: green;
+}
+
+/* border */
+div{
+    border-width: 10;
+    border-style: solid;
+    border-color:rgb(30, 138, 210);
+    border-radius:50%;
+    color:crimson;
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 54px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #dbdbdb;
+}
+
+
+/* INSTAGRAM LOGO */
+
+.logo {
+    font-family: cursive;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+/* SEARCH BAR */
+
+.search {
+    width: 160px;
+    height: 22px;
+
+    justify-self: center;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+
+    padding: 0 8px;
+}
+
+.search .material-symbols-outlined {
+    font-size: 14px;
+    color: #887d7d;
+}
+
+.search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* RIGHT SIDE ICONS */
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 18px;
+}
+
+.nav-links .material-symbols-outlined {
+    font-size: 22px;
+
+    color: #262626;
+
+    cursor: pointer;
+
+}
+
+/* PROFILE IMAGE */
+
+.nav-links img {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    cursor: pointer;
+}
+

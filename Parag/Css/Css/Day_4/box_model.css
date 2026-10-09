@@ -1,0 +1,26 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap'); */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:content-box;
+
+}
+
+
+
+h1{
+    width:1440px;
+    height:200px;
+    margin:20px;
+    padding:20px;
+
+
+    font-family:"Libre Caslon Condensed", serif;
+
+    font-size:50px;
+    font-weight:normal;
+    font-style:italic;
+    text-transform:uppercase;
+
+}

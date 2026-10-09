@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    border: 1px solid rgb(255, 0, 0);
+    display: flex;
+    padding: 3px;
+    width: 100%;
+}
+
+div > *{
+    border: 1px solid green;
+    width: 300px;
+
+    /* flex-direction:column-reverse;
+    flex-wrap:wrap-reverse; */
+}
+
+.child_3{
+    /* flex-grow:0.5; */
+    flex-shrink: 4;
+}

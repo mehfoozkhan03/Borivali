@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 1px solid rgb(0, 250, 50);
+}
+
+ul{
+    border: 1px solid red;
+    width:fit-content;
+    margin:50% 0;
+    display:flex;
+    /* gap: 20px; */
+    row-gap: 10px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    padding: 10px;
+    /* alingnment [x axis{justify] | y axis{align-items}] */
+    justify-content: center;
+    justify-self: center;
+
+    align-items: center;
+    align-content: center;
+
+    /* align-self && justify-items:-grid prop's */
+}
+
+li{
+    list-style: none;
+    border: 2px dashed blue;
+    padding: 2px 7px;
+}
