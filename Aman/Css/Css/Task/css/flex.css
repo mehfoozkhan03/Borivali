@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+h1 {
+    padding: 25px;
+    background-color: cornflowerblue;
+}
+
+.no2 {
+    justify-content: space-around;
+    margin: 10px;
+    display: flex;
+}
+
+.no2>h1 {
+    padding-inline: 84px;
+    background-color: cornflowerblue;
+    align-content: center;
+    text-align: center;
+}
+
+.no3{
+    justify-content: space-around;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.no3>h1{
+    padding-inline: 135px;
+    background-color: cornflowerblue;
+    align-content: center;
+    text-align: center;
+}
+
+.no4{
+    justify-content: space-around;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.no4>h1{
+    padding-inline: 195px;
+    background-color: cornflowerblue;
+    align-content: center;
+    text-align: center;
+}
+.no6{
+    justify-content: space-around;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.no6>h1{
+    padding-inline: 315px;
+    background-color: cornflowerblue;
+    align-content: center;
+    text-align: center;
+}
+
+.no7{
+    justify-content: space-between;
+    margin: 10px 33px;
+    display: flex;
+    gap: 20px;
+}
+
+.h4{
+    background-color: cornflowerblue;
+    padding-inline: 195px;
+}
+
+.h8{
+    background-color: cornflowerblue;
+    padding-inline: 455px;
+}
+
+.no8{
+    padding-inline: 20px;
+    background-color: cornflowerblue;
+    justify-content: space-around;
+    margin: 10px 33px;
+    display: flex;
+}
+
