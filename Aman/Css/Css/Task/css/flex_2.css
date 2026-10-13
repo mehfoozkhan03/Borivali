@@ -1,66 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 div {
-    display: grid;
-    margin: 10px;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    grid-template-areas:
-        "first second second third third"
-        "first fourth seventh seventh ninth";
-    background-color: black;
+  display: grid;
+  margin: 10px;
+  padding: 17px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  grid-template-areas:
+    "a b b c c"
+    "a d e e f"
+    "g h h i f";
+  background-color: black;
+  line-height: 10px;
 
-    &>*{
-        padding: 11rem 6rem;
-    }
+  & > * {
+    padding: 5rem 5rem;
+  }
 
-    &>span:first-child {
-        background-color: red;
-        grid-area: first;
-    }
+  & > span:first-child {
+    background-color: red;
+    grid-area: a;
+  }
 
-    &>span:nth-child(2) {
-        background-color: teal;
-        grid-area: second;
-    }
+  & > span:nth-child(2) {
+    background-color: teal;
+    grid-area: b;
+  }
 
-    &>span:nth-child(3) {
-        background-color: goldenrod;
-        grid-area: third;
-    }
+  & > span:nth-child(3) {
+    background-color: goldenrod;
+    grid-area: c;
+  }
 
-    &>span:nth-child(4) {
-        background-color: goldenrod;
-        grid-area: fourth;
+  & > span:nth-child(4) {
+    background-color: goldenrod;
+    grid-area: d;
+  }
 
-    }
+  & > span:nth-child(5) {
+    background-color: white;
+    grid-area: e;
+  }
 
-    &>span:nth-child(5) {
-        background-color: goldenrod;
-        grid-area: fifth;
-    }
+  & > span:nth-child(6) {
+    background-color: red;
+    grid-area: f;
+  }
 
-    &>span:nth-child(6) {
-        background-color: goldenrod;
-        grid-area: sixth;
-    }
+  & > span:nth-child(7) {
+    background-color: white;
+    grid-area: g;
+  }
 
-    &>span:nth-child(7) {
-        background-color: white;
-        grid-area: seventh;
-    }
+  & > span:nth-child(8) {
+    background-color: tomato;
+    grid-area: h;
+  }
 
-    &>span:nth-child(8) {
-        background-color: tomato;
-        grid-area: eighth;
-    }
-    &>span:nth-child(9) {
-        background-color: tomato;
-        grid-area: ninth;
-    }
-
+  & > span:nth-child(9) {
+    background-color: teal;
+    grid-area: i;
+  }
 }

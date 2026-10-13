@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.div1 {
+    display: flex;
+    gap: 17px;
+    width: 100%
+}
+
+.div1 h1 {
+    flex: 1;
+}
+
+h1 {
+    background-color: dimgray;
+    padding: 35px;
+    border-radius: 7px;
+    color: white;
+}
+
+.div2 {
+    display: flex;
+    gap: 18px;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.c1 {
+    width: 23%;
+}
+
+.d1 {
+    flex: 1;
+}
+
+.div3 {
+    display: flex;
+    width: 100%;
+    margin-top: 17px;
+}
+
+.e1 {
+    width: 100%;
+}
