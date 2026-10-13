@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag's</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="name">Last Name:</label>
+        <input type="text" id="lastname" placeholder="Enter your last name" required>
+        <br><br>
+
+        <label for="dateofbirth">Date of Birth:</label>
+        <input type="date" id="dateofbirth" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" required>
+        <br><br>
+
+        <label for="tel">Phone no.:</label>
+        <input type="tel" id="tel" maxlength="10" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <br><br>
+
+
+        <label for="gender">Gender:</label>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <label>Position Available:</label>
+        <input type="radio" id="developer" name="position"> Junior Developer
+        <input type="radio" id="middeveloper" name="position"> Mid Developer
+        <input type="radio" id="seniordeveloper" name="position"> Senior Developer
+        <br><br>
+
+        <label>Programming Languages:</label>
+        <input type="checkbox" id="java" required> Java
+        <input type="checkbox" id="javascript" required> Javascript
+        <input type="checkbox" id="python" required> Python
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br><br>
+
+        <label for="file">Upload your file:</label>
+        <input type="file" id="file" required>
+        <br><br>
+        <label for="color">Choose a color:</label>
+        <input type="color" id="color" required>
+        <br> <br>
+        <label for="range">Select a range:</label>
+        <input type="range" id="range" min="0" max="100" required>
+
+    </form>
+</body>
+
+</html>

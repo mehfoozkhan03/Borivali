@@ -1,0 +1,21 @@
+*{
+    color: green;
+}
+
+/* element selector | name selector */
+
+h1 {
+  color: red;
+}
+
+/* class denoted as "." */
+
+.naam {
+  color: blue;
+}
+
+/* class denoted as "#" */
+
+#naam2 {
+  color: tomato;
+}

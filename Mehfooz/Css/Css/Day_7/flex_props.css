@@ -1,0 +1,47 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div{
+    border: 1px solid red;
+    display: flex;
+    padding: 3px;
+    width: 100%;
+
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap-reverse; */
+
+}
+
+div> *{
+    border: 2px dashed green;
+    width: 300px;
+}
+
+.child_3{
+    /* flex-grow: .5; */
+    flex-shrink: 4;
+}
+
+
+/* 
+------------------------------------------------
+|               width 100% -> 1440px
+|   c1 c2 c3 c4
+|
+|
+|
+|
+|
+|
+|
+|
+-------------------------------------------------
+
+
+*/

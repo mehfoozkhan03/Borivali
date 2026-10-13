@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <!--
+        type
+        1. pending button explanation 
+        2. drop-down | check-box | radio
+        -->
+
+    <form onsubmit="">
+
+        <fieldset>
+            <legend>country</legend>
+            <select name="" id="">
+                <option value="#">--select your country--</option>
+                <option value="in">India</option>
+                <option value="pak">Pakistan</option>
+                <option value="eng">England</option>
+                <option value="lon">Londan</option>
+            </select>
+        </fieldset>
+
+        <input type="text" list="opt">
+
+        <datalist id="opt">
+            <option value="in">India</option>
+            <option value="pak">Pakistan</option>
+            <option value="eng">England</option>
+            <option value="lon">Londan</option>
+        </datalist>
+
+
+        <fieldset>
+
+            <legend>aggre</legend>
+
+            <input type="checkbox" name="" id="" required><span> &ThinSpace; Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit.</span>
+
+            <input type="checkbox" name="" id=""><span> &ThinSpace; Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit.</span>
+
+            <input type="checkbox" name="" id=""><span> &ThinSpace; Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit.</span>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>gender</legend>
+
+            <label for="">male</label>
+            <input type="radio" name="gender" id="" value="male">
+
+            <label for="">female</label>
+            <input type="radio" name="gender" id="" value="female">
+
+        </fieldset>
+
+
+        <br>
+        <br>
+        <input type="submit" value="click">
+        <button type="submit">click</button>
+    </form>
+
+</body>
+
+</html>
