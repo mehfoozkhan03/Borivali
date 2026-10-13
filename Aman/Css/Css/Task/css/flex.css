@@ -1,96 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .no1 {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
 }
 
 h1 {
-    padding: 25px;
-    background-color: cornflowerblue;
+  padding: 25px;
+  background-color: cornflowerblue;
 }
 
 .no2 {
-    justify-content: space-around;
-    margin: 10px;
-    display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  display: flex;
 }
 
-.no2>h1 {
-    padding-inline: 84px;
-    background-color: cornflowerblue;
-    align-content: center;
-    text-align: center;
+.no2 > h1 {
+  padding-inline: 88px;
+  background-color: cornflowerblue;
+  align-content: center;
+  text-align: center;
 }
 
-.no3{
-    justify-content: space-around;
-    margin: 10px;
-    display: flex;
-    gap: 20px;
+.no3 {
+  justify-content: space-around;
+  margin: 10px;
+  display: flex;
+  gap: 20px;
 }
 
-.no3>h1{
-    padding-inline: 135px;
-    background-color: cornflowerblue;
-    align-content: center;
-    text-align: center;
+.no3 > h1 {
+  padding-inline: 144px;
+  background-color: cornflowerblue;
+  align-content: center;
+  text-align: center;
 }
 
-.no4{
-    justify-content: space-around;
-    margin: 10px;
-    display: flex;
-    gap: 20px;
+.no4 {
+  justify-content: space-around;
+  margin: 10px;
+  display: flex;
+  gap: 20px;
 }
 
-.no4>h1{
-    padding-inline: 195px;
-    background-color: cornflowerblue;
-    align-content: center;
-    text-align: center;
+.no4 > h1 {
+  padding-inline: 207px;
+  background-color: cornflowerblue;
+  align-content: center;
+  text-align: center;
 }
-.no6{
-    justify-content: space-around;
-    margin: 10px;
-    display: flex;
-    gap: 20px;
-}
-
-.no6>h1{
-    padding-inline: 315px;
-    background-color: cornflowerblue;
-    align-content: center;
-    text-align: center;
+.no6 {
+  justify-content: space-around;
+  margin: 10px;
+  display: flex;
+  gap: 20px;
 }
 
-.no7{
-    justify-content: space-between;
-    margin: 10px 33px;
-    display: flex;
-    gap: 20px;
+.no6 > h1 {
+  padding-inline: 335px;
+  background-color: cornflowerblue;
+  align-content: center;
+  text-align: center;
 }
 
-.h4{
-    background-color: cornflowerblue;
-    padding-inline: 195px;
+.no7 {
+  justify-content: space-between;
+  margin: 10px 33px;
+  display: flex;
+  gap: 20px;
 }
 
-.h8{
-    background-color: cornflowerblue;
-    padding-inline: 455px;
+.h4 {
+  padding-inline: 207px;
+  background-color: cornflowerblue;
+  align-content: center;
+  text-align: center;
+  margin: 10px 4px;
 }
 
-.no8{
-    padding-inline: 20px;
-    background-color: cornflowerblue;
-    justify-content: space-around;
-    margin: 10px 33px;
-    display: flex;
+.h8 {
+  background-color: cornflowerblue;
+  padding-inline: 461px;
+  margin: 10px 56px;
 }
 
+.no8 {
+  padding-inline: 20px;
+  background-color: cornflowerblue;
+  justify-content: space-around;
+  margin: 10px 35px;
+  display: flex;
+}
