@@ -13,12 +13,13 @@ div {
   grid-template-areas:
     "a b b c c"
     "a d e e f"
+    "g d e e f"
     "g h h i f";
   background-color: black;
   line-height: 10px;
 
   & > * {
-    padding: 5rem 5rem;
+    padding: 7rem 5rem;
   }
 
   & > span:first-child {
