@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Gallery</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --surface: #1a1d24;
+    --text: #e8eaf0;
+    --muted: #9aa1b2;
+    --accent: #6c8cff;
+    --radius: 12px;
+    --ease: cubic-bezier(.22, .61, .36, 1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* ---------- Header & filters ---------- */
+  header {
+    text-align: center;
+    padding: 48px 16px 24px;
+  }
+  header h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); letter-spacing: -.5px; }
+  header p { color: var(--muted); margin-top: 6px; }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 16px 28px;
+  }
+  .filters button {
+    background: var(--surface);
+    color: var(--muted);
+    border: 1px solid #2a2e38;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: .95rem;
+    cursor: pointer;
+    transition: background .25s var(--ease), color .25s var(--ease),
+                transform .25s var(--ease), border-color .25s var(--ease);
+  }
+  .filters button:hover { color: var(--text); transform: translateY(-2px); border-color: var(--accent); }
+  .filters button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  /* ---------- Gallery grid ---------- */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px 64px;
+  }
+  .item {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--surface);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(14px) scale(.97);
+    animation: appear .5s var(--ease) forwards;
+    box-shadow: 0 4px 14px rgba(0,0,0,.35);
+    transition: box-shadow .3s var(--ease);
+  }
+  .item.hidden { display: none; }
+  @keyframes appear { to { opacity: 1; transform: none; } }
+
+  .item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .6s var(--ease), filter .4s var(--ease);
+  }
+  .item:hover, .item:focus-visible { box-shadow: 0 10px 28px rgba(108,140,255,.35); outline: none; }
+  .item:hover img, .item:focus-visible img { transform: scale(1.1); filter: brightness(.7); }
+
+  .item .caption {
+    position: absolute; inset: auto 0 0 0;
+    padding: 14px;
+    background: linear-gradient(transparent, rgba(0,0,0,.8));
+    transform: translateY(100%);
+    transition: transform .4s var(--ease);
+  }
+  .item .caption h3 { font-size: 1rem; }
+  .item .caption span { font-size: .8rem; color: #c3c9d8; text-transform: capitalize; }
+  .item:hover .caption, .item:focus-visible .caption { transform: translateY(0); }
+
+  /* ---------- Lightbox ---------- */
+  .lightbox {
+    position: fixed; inset: 0;
+    background: rgba(5,6,9,.94);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; visibility: hidden;
+    transition: opacity .35s var(--ease), visibility .35s;
+    z-index: 100;
+  }
+  .lightbox.open { opacity: 1; visibility: visible; }
+
+  .lightbox figure {
+    max-width: 90vw; max-height: 86vh;
+    display: flex; flex-direction: column; align-items: center;
+    transform: scale(.92);
+    transition: transform .35s var(--ease);
+  }
+  .lightbox.open figure { transform: scale(1); }
+  .lightbox img {
+    max-width: 90vw; max-height: 76vh;
+    border-radius: 8px;
+    object-fit: contain;
+    transition: opacity .25s var(--ease);
+  }
+  .lightbox img.fading { opacity: 0; }
+  .lightbox figcaption { margin-top: 12px; text-align: center; }
+  .lightbox figcaption small { color: var(--muted); display: block; }
+
+  .lb-btn {
+    position: absolute;
+    background: rgba(255,255,255,.1);
+    color: #fff; border: none;
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    font-size: 1.5rem; line-height: 1;
+    cursor: pointer;
+    transition: background .25s var(--ease), transform .25s var(--ease);
+  }
+  .lb-btn:hover { background: var(--accent); transform: scale(1.1); }
+  .lb-prev { left: 20px; top: 50%; margin-top: -24px; }
+  .lb-next { right: 20px; top: 50%; margin-top: -24px; }
+  .lb-close { top: 20px; right: 20px; }
+
+  .empty { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 40px 0; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 600px) {
+    .gallery { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 0 10px 48px; }
+    .item .caption { transform: translateY(0); padding: 8px; }   /* no hover on touch screens */
+    .item .caption h3 { font-size: .85rem; }
+    .lb-btn { width: 40px; height: 40px; }
+    .lb-prev { left: 8px; } .lb-next { right: 8px; }
+  }
+  @media (max-width: 380px) {
+    .gallery { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Image Gallery</h1>
+  <p>Browse by category, click any photo to open it.</p>
+</header>
+
+<nav class="filters" id="filters" aria-label="Filter images by category"></nav>
+<main class="gallery" id="gallery"></main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption>
+      <strong id="lbTitle"></strong>
+      <small id="lbMeta"></small>
+    </figcaption>
+  </figure>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next image">&#8250;</button>
+</div>
+
+<script>
+  /* ---------- Image data (swap in your own images here) ---------- */
+  // Each image: src (full size), thumb (grid), title, category.
+  // Placeholder photos come from picsum.photos. To use local files, replace
+  // the URLs with paths like "images/photo1.jpg".
+  const categories = {
+    nature:  ["Misty Forest", "Mountain Lake", "Autumn Trail", "Ocean Cliffs", "Green Valley"],
+    city:    ["Downtown Lights", "Old Bridge", "Rooftop View", "Night Street", "Metro Station"],
+    animals: ["Curious Fox", "Sleepy Cat", "Mountain Goat", "Garden Bird", "Wild Horse"],
+    food:    ["Fresh Salad", "Street Tacos", "Berry Tart", "Morning Coffee", "Pasta Plate"]
+  };
+
+  const images = [];
+  let n = 10;
+  for (const [cat, titles] of Object.entries(categories)) {
+    titles.forEach(title => {
+      n++;
+      images.push({
+        title, category: cat,
+        thumb: `https://picsum.photos/seed/${cat}${n}/600/450`,
+        src:   `https://picsum.photos/seed/${cat}${n}/1600/1200`
+      });
+    });
+  }
+
+  /* ---------- Build filters & grid ---------- */
+  const gallery  = document.getElementById("gallery");
+  const filtersEl = document.getElementById("filters");
+  let currentFilter = "all";
+  let visible = [];          // images currently shown (drives lightbox navigation)
+  let index = 0;             // position inside `visible`
+
+  ["all", ...Object.keys(categories)].forEach(cat => {
+    const b = document.createElement("button");
+    b.textContent = cat === "all" ? "All" : cat[0].toUpperCase() + cat.slice(1);
+    b.dataset.filter = cat;
+    if (cat === "all") b.classList.add("active");
+    filtersEl.appendChild(b);
+  });
+
+  images.forEach((img, i) => {
+    const el = document.createElement("div");
+    el.className = "item";
+    el.tabIndex = 0;
+    el.dataset.category = img.category;
+    el.style.animationDelay = `${(i % 10) * 40}ms`;
+    el.innerHTML = `
+      <img src="${img.thumb}" alt="${img.title}" loading="lazy"
+           onerror="this.style.display='none'">
+      <div class="caption"><h3>${img.title}</h3><span>${img.category}</span></div>`;
+    el.addEventListener("click", () => openLightbox(img));
+    el.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(img); }
+    });
+    img.el = el;
+    gallery.appendChild(el);
+  });
+
+  /* ---------- Filtering ---------- */
+  function applyFilter(cat) {
+    currentFilter = cat;
+    visible = [];
+    images.forEach((img, i) => {
+      const show = cat === "all" || img.category === cat;
+      img.el.classList.toggle("hidden", !show);
+      if (show) {
+        visible.push(img);
+        // restart the entrance animation
+        img.el.style.animation = "none";
+        void img.el.offsetWidth;
+        img.el.style.animation = "";
+        img.el.style.animationDelay = `${(visible.length - 1) * 40}ms`;
+      }
+    });
+    filtersEl.querySelectorAll("button").forEach(b =>
+      b.classList.toggle("active", b.dataset.filter === cat));
+  }
+  filtersEl.addEventListener("click", e => {
+    const b = e.target.closest("button");
+    if (b) applyFilter(b.dataset.filter);
+  });
+  applyFilter("all");
+
+  /* ---------- Lightbox ---------- */
+  const lb      = document.getElementById("lightbox");
+  const lbImg   = document.getElementById("lbImg");
+  const lbTitle = document.getElementById("lbTitle");
+  const lbMeta  = document.getElementById("lbMeta");
+  let lastFocus = null;
+
+  function show(i) {
+    index = (i + visible.length) % visible.length;     // wrap around
+    const img = visible[index];
+    lbImg.classList.add("fading");
+    const loader = new Image();
+    loader.onload = loader.onerror = () => {
+      lbImg.src = img.src;
+      lbImg.alt = img.title;
+      lbImg.classList.remove("fading");
+    };
+    loader.src = img.src;
+    lbTitle.textContent = img.title;
+    lbMeta.textContent = `${img.category} · ${index + 1} / ${visible.length}`;
+  }
+  function openLightbox(img) {
+    lastFocus = document.activeElement;
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+    show(visible.indexOf(img));
+    document.getElementById("lbClose").focus();
+  }
+  function closeLightbox() {
+    lb.classList.remove("open");
+    document.body.style.overflow = "";
+    if (lastFocus) lastFocus.focus();
+  }
+
+  document.getElementById("lbNext").addEventListener("click", () => show(index + 1));
+  document.getElementById("lbPrev").addEventListener("click", () => show(index - 1));
+  document.getElementById("lbClose").addEventListener("click", closeLightbox);
+  lb.addEventListener("click", e => { if (e.target === lb) closeLightbox(); });
+
+  document.addEventListener("keydown", e => {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowRight") show(index + 1);
+    if (e.key === "ArrowLeft") show(index - 1);
+  });
+
+  // Swipe support for touch devices
+  let startX = null;
+  lb.addEventListener("touchstart", e => { startX = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener("touchend", e => {
+    if (startX === null) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1));
+    startX = null;
+  });
+</script>
+</body>
+</html>

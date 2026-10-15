@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body>div{
+border: 2px solid black;
+width: 100%;
+padding: ;
+}
