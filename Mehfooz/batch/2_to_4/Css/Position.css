@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background:blue; */
+  border: 2px solid red;
+  padding: 20px;
+
+}
+
+.sub_child_body {
+  border: 1px dashed green;
+  /* padding: 10px; */
+  height: 30px;
+  /* position: relative; */
+  background: tomato;
+}
+
+.child {
+  border: 1px outset purple;
+  padding: 3px;
+  background: teal;
+  position: absolute;
+  /* top: 0; */
+  z-index: -1;
+}
