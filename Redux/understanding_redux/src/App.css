@@ -1,0 +1,165 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: capitalize;
+  border: 2px solid rebeccapurple;
+  margin: 0.3rem 0;
+  padding: 0.3rem 0;
+
+  & > * {
+    text-decoration: none;
+    color: #000 !important;
+  }
+
+
+  &>a:last-child{
+  position: relative;
+  /* border: 1px solid red; */
+  
+
+  &>span{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+
+  }
+}
+
+.isActive{
+background-color: tomato;
+padding: .3rem 1rem;
+color: #fff;
+border-radius: 10px;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar a.isActive {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.navbar svg {
+  font-size: 20px;
+}
+
+
+.batch{
+  background: rgba(232, 199, 157, 0.745);
+  font-size: medium;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/*  card data css  */
+
+.person-card {
+  width: 100%;
+  max-width: 340px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.person-card__image-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px 12px;
+  background: #f3f4f6;
+}
+
+.person-card__image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+}
+
+.person-card__content {
+  padding: 20px;
+}
+
+.person-card__name {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 21px;
+  text-align: center;
+}
+
+.person-card__job {
+  margin: 0 0 20px;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.person-card__details p {
+  margin: 12px 0;
+  color: #4b5563;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.person-card__details strong {
+  color: #111827;
+}
+
+.person-card__button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px;
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.person-card__button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 480px) {
+  .person-card {
+    max-width: 100%;
+  }
+}
+
+/* home */
+
+.home{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  row-gap: 2rem;
+  margin: 2rem 0;
+
+}
