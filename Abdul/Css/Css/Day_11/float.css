@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* old approach */
+div::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* new approach */
+
+div{
+    border: 2px solid black;
+    /* height: 10px;
+    display: flow-root; */
+}
+
+h1{
+    background-color: red;
+    float: right;
+}

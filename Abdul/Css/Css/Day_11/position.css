@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 2px solid rgb(145, 13, 13);
+    padding: 20px;
+}
+
+.sub_child_body{
+    border: 1px dashed green;
+    height: 30px;
+   padding: 10px;
+   /* position: relative; */
+   background: tomato;
+   
+}
+
+.child{
+    border: 1px outset blue;
+    padding: 3px;
+    background: rgb(12, 95, 123);
+    position: absolute;
+    z-index: -2;
+    /* top:0px; */
+}
