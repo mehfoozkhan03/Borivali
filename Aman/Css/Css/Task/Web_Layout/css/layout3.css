@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 1px solid skyblue;
+    margin: 10px;
+}
+
+header{
+    border: 1px solid skyblue;
+    background-color: #80b2d5;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin:20px; */
+}
+
+
+nav {
+    border: 2px solid skyblue;
+    background-color: skyblue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    /* color: white; */
+}
+
+main {
+    display: flex;
+    /* gap: 10px; */
+    /* margin: 10px; */
+}
+
+main div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+section {
+    height: 50px;
+    background-color: white;
+    border: 2px solid skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: black; */
+}
+
+.sh1{
+    background-color: pink;
+}
+
+article {
+    height: 100px;
+    background-color: #ff914d;
+    border: 2px solid skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: black; */
+}
+
+aside {
+    width: 40%;
+    background-color: #f65bb8;
+    border: 2px solid skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+}
+
+footer {
+    border: 2px solid skyblue;
+    background-color: gray;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    /* color: white; */
+}
