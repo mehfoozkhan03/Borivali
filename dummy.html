@@ -6,17 +6,36 @@
     <title>Document</title>
     <style>
       div {
-        border: 2px dashed gray;
-        outline: 3px solid gray;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        border: 2px solid gray;
+        /* flex-wrap: wrap; */
 
-        /* outline-width: 3px;
-        outline-style: solid;
-        outline-color: red; */
-        outline-offset: 5px;
+        & > h3:first-child {
+          background: red;
+          /* flex-grow:.5; */
+          width: 200px;
+        }
+        
+        & > h3:nth-child(2) {
+          background: royalblue;
+          width: 200px;
+          flex-shrink: 7;
+        }
+        
+        & > h3:last-child {
+          background: tan;
+          width: 200px;
+        }
       }
     </style>
   </head>
   <body>
-    <div>hello</div>
+    <div>
+      <h3>hello1</h3>
+      <h3>hello2</h3>
+      <h3>hello3</h3>
+    </div>
   </body>
 </html>
