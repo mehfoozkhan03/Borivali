@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 5px double teal;
+}
+
+ul {
+  width: 50%;
+  height: 300px;
+  border: 1px solid red;
+  margin: 15% auto;
+  display: flex;
+  gap: 25px;
+  /* column-gap: 10px;
+  row-gap: 30px; */
+  flex-wrap: wrap;
+  padding: 10px;
+
+  /* alignment [x-axis {justify} | y-axis {align}] */
+
+  justify-content: center;
+  /* justify-self: center; */
+
+  align-items: center;
+  /* align-content: center; */
+
+  /* align-self :- grid prop's && justify-items:- grid prop's */
+}
+
+li {
+  list-style: none;
+  border: 2px dashed green;
+  padding: 2px 9px;
+}

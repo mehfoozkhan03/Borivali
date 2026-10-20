@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* old approach  */
+div::after {
+  content: "erhehbed";
+  display: block;
+  clear: both;
+}
+
+/* new  approach  */
+div {
+  border: 2px dashed black;
+  /* height: 10px; */
+  /* display: flow-root; */
+}
+
+h1 {
+  background: red;
+  float: right;
+}
