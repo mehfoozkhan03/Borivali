@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edf2f4;
+    padding: 7px;
+    font-family: Arial, sans-serif;
+}
+
+/* Main navbar */
+.nav {
+    height: 65px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+    padding: 0 60px;
+}
+
+/* Logo and heading */
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 64px;
+    line-height: 64px;
+}
+
+.logo img {
+    width: 42px;
+    height: 35px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.logo h3 {
+    display: inline-block;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    vertical-align: middle;
+    margin-left: 2px;
+    line-height: normal;
+}
+
+/* Navigation icons */
+.icons {
+    display: inline-block;
+    float: right;
+    list-style-type: none;
+    height: 64px;
+}
+
+.icons li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 12px;
+    height: 64px;
+    line-height: 64px;
+}
+
+.icons span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    color: #757575;
+    cursor: pointer;
+}
+
+.icons li:last-child span {
+    font-size: 30px;
+    color: #333;
+}

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    border: 1px solid black;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+
+    grid-template-areas: 
+    "sixth second third "
+    "fourth fifth first";
+    gap: 10px;
+
+    & >*{
+    border: 1px dashed red;
+    text-align: center;
+    padding:4rem 2rem;
+
+    }
+
+    & >span:first-child{
+        background:red;
+        grid-area: first;
+    }
+
+    & >span:nth-child(2){
+        background:green;
+        grid-area: second;
+    }
+
+    & >span:nth-child(3){
+        background:blue;
+        grid-area: third;
+    }
+
+    & >span:nth-child(4){
+        background:purple;
+        grid-area:  fourth;
+    }
+
+    & >span:nth-child(5){
+        background:yellow;
+        grid-area: fifth;
+    }
+
+    & >span:last-child{
+        background:cyan;
+        grid-area: sixth;
+    }
+}
+

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* display block and inline */
+/* div{
+    display:inline;
+    border: 1px solid green ;
+    height: 100px;
+    margin: 20px;
+}
+
+span{
+    background:red;
+    display:block;
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+} */
+
+/* dispaly content  */
+div{
+    display:inline;
+    background:red ;
+}
+
+span{
+    display: inline-block;
+    background: rgb(221 ,225 ,71 );
+    display:content;
+    line-height: 2;
+    width: 100px;
+    height: 50px;
+}

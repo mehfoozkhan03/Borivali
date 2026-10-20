@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+.container {
+    width: 550px;
+    height: 350px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 60px 60px 150px 60px;
+
+    gap: 2px;
+
+    border: 2px solid black;
+    padding: 5px;
+
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "section aside"
+        "footer footer";
+}
+
+header {
+    grid-area: header;
+    background: tomato;
+    border: 1px solid black;
+}
+
+nav {
+    grid-area: nav;
+    background: rgb(16, 191, 249);
+    border: 1px solid black;
+    padding: 5px;
+}
+
+section {
+    grid-area: section;
+    display: grid;
+    grid-template-rows: (5 1fr);
+    gap: 4px;
+    padding: 2px;
+}
+
+section h3 {
+    background: rgb(250, 192, 0);
+    border: 1px solid black;
+
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+article {
+    background: orange;
+    border: 1px solid black;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
+
+
+aside {
+    grid-area: aside;
+    background: rgb(255, 37, 215);
+    border: 1px solid black;
+
+}
+
+footer {
+    grid-area: footer;
+    background: gray;
+    border: 1px solid black;
+
+}
+
+header,
+nav,
+aside,
+footer {
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    color: white;
+}

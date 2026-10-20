@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* display: float */
+
+/* div{
+    background-color:greenyellow;
+    float: left;
+    /* left,right,inline-start,inline-end
+} */
+
+/* display: flow-root */
+.parent{
+    border: 2px solid black;
+    display: flow-root;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    float: right;
+    line-height: 3;
+    text-align: center;
+}
