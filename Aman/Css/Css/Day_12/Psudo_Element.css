@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+li{
+    display: flex;
+} 
+
+li:hover{
+    color: red;
+}
+
+li::before{
+
+    content: -2;
+}
