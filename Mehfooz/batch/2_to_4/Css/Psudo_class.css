@@ -21,8 +21,43 @@ h1{
 
 input{
     border-radius: 6px;
-    border: 2px solid red !important;
+    /* border: 2px solid red !important; */
     &:active{
         border:2px dashed green !important;
+        outline: none;
     }
+}
+
+button{
+    margin-left: 3rem;
+    &:active{
+        border: 2px solid red;
+        transform: scale(3);
+    }
+}
+
+/* 
+
+l 
+v
+h
+a
+
+*/
+
+
+a:link{
+    color: red ;
+    text-decoration: none;
+}
+
+a:visited{
+    color: orange;
+}
+
+a:hover{
+    color: green ;
+}
+a:active{
+    color: black ;
 }
