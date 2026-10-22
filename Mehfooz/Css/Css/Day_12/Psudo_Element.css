@@ -4,7 +4,61 @@
   box-sizing: border-box;
 }
 
+h1::before {
+  content: "💕";
+}
+h1::after {
+  content: "💕";
+}
 
-h1::before{
-    content: "   ";
+p::first-letter {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-style: italic;
+  color: rebeccapurple;
+  border: 2px double rebeccapurple;
+  padding: 0.3rem;
+}
+
+p {
+  width: 70%;
+  margin: auto;
+}
+p::first-line {
+  color: brown;
+}
+
+p::selection {
+  background: greenyellow;
+  color: brown;
+}
+
+ul {
+  width: 50%;
+  margin: auto;
+}
+
+li::marker {
+  color: red;
+}
+
+ul+div {
+  border: 1px solid red;
+  width: 100%;
+  height: 90vh;
+  /* bg prop's */
+  background-image: url("../../../Task/position/task_html\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem;
+}
+
+div+div{
+  width: 100%;
+  height: 20vh;
+  border: 2px solid green;
+  margin: 1rem auto;
+  overflow-inline: scroll;
+  scrollbar-width: none;
 }
