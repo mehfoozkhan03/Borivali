@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      /* flex
+        
+        we always put this in parent div or section
+        
+        */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parent {
+        display: flex;
+        /* gap: 10px; */
+
+        justify-content: space-around; /*work on X-axis */
+
+        align-items : center; /*work on Y-axis */
+
+        /* overflow-x: scroll; */
+        width: 100%;
+        height: 90vh;
+        margin: 1rem auto;
+        padding: 1rem;
+        border: 2px solid red;
+      }
+
+      .child_1,
+      .child_2,
+      .child_3,
+      .child_4 {
+        width: 200px;
+        height: 200px;
+
+        /* flex-shrink: 0; */
+        border: 1px solid gray;
+      }
+
+      .child_1 {
+        background: tomato;
+      }
+      .child_2 {
+        background: teal;
+      }
+      .child_3 {
+        background: rebeccapurple;
+      }
+      .child_4 {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child_1"></div>
+      <div class="child_2"></div>
+      <div class="child_3"></div>
+      <div class="child_4"></div>
+    </div>
+  </body>
+</html>

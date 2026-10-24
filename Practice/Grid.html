@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parent {
+        display: grid;
+
+        grid-template-columns: repeat(3, 300px);
+        /* justify-items: center; */
+        /* align-items: center; */
+
+        justify-content: center;
+        align-content: center;
+
+        width: fit-content;
+        row-gap: 20px;
+        column-gap: 40px;
+
+        width: 100%;
+        height: 90vh;
+        /* margin: 1rem 0; */
+        padding: 1rem;
+        border: 2px solid red;
+      }
+
+      .child_1,
+      .child_2,
+      .child_3,
+      .child_4 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid gray;
+
+        /*  justify-self: center;
+        align-self: center; */
+      }
+
+      .child_1 {
+        background: tomato;
+      }
+      .child_2 {
+        background: teal;
+      }
+      .child_3 {
+        background: rebeccapurple;
+      }
+      .child_4 {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child_1">hello</div>
+      <div class="child_2">hello</div>
+      <div class="child_3">hello</div>
+      <div class="child_4">hello</div>
+    </div>
+  </body>
+</html>
