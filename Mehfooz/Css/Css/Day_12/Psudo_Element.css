@@ -25,7 +25,7 @@ p {
   margin: auto;
 }
 p::first-line {
-  color: brown;
+  color: tomato;
 }
 
 p::selection {
@@ -33,13 +33,13 @@ p::selection {
   color: brown;
 }
 
-ul {
+ul,ol {
   width: 50%;
   margin: auto;
 }
 
 li::marker {
-  color: red;
+  color:tomato;
 }
 
 ul+div {

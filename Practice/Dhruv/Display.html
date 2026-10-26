@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .inline {
+        background: aqua;
+        display: block;
+      }
+
+      .block {
+        display: inline;
+        background: tomato;
+      }
+
+      span {
+        display: inline-block;
+        background: aqua;
+        line-height: 2;
+        width: 200px;
+        height: 100px;
+        margin: 20px;
+      }
+
+      /* div {        
+        background: tomato;
+        line-height: 2;
+        height: 100vh
+        } */
+
+      nav {
+        /* display: flex; */
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <span class="inline">hello</span>
+    <div class="block">hello</div> -->
+
+    <nav>
+      <span>home</span>
+      <span>about</span>
+    </nav>
+  </body>
+</html>

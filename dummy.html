@@ -4,25 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <table border="2">
+    <table border="2" align="center">
+      <caption>
+        monthly expenditure
+      </caption>
+      <colgroup>
+        <col />
+        <col />
+        <col style="background: green" />
+        <col style="background: red" />
+      </colgroup>
       <thead>
-        <!-- table heading -->
         <tr>
-          <th>Sr no</th>
-          <th>subject</th>
-          <th>time</th>
+          <th rowspan="2">Sr no</th>
+          <th rowspan="2">emplyee name</th>
+          <th colspan="2" style="background-color: transparent !important">
+            details
+          </th>
+        </tr>
+        <tr>
+          <th>income</th>
+          <th>expences</th>
         </tr>
       </thead>
       <tbody>
-        <!-- table body -->
-         <tr>
+        <tr>
           <td>1</td>
-          <td>math</td>
-          <td>9-11</td>
-         </tr>
+          <td>mehfooz khan</td>
+          <td>10000र</td>
+          <td>5000र</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>suresh yadav</td>
+          <td>20000र</td>
+          <td>15000र</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>ramesh yadav</td>
+          <td>30000र</td>
+          <td>17000र</td>
+        </tr>
       </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">total</td>
+          <td>60000र</td>
+          <td>37000र</td>
+        </tr>
+        <tr>
+          <td colspan="2">balance(diff)</td>
+          <td colspan="2">23000र</td>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>
