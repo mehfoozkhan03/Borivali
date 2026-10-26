@@ -21,6 +21,7 @@
     width: 100%;
     border: 2px solid red;
     overflow-x: scroll;
+    /* scrollbar-width: none; */
     scroll-behavior: smooth;
     scrollbar-width: auto;
     scrollbar-color: red yellow;  
