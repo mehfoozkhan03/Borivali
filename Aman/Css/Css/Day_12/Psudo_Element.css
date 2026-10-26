@@ -21,6 +21,7 @@ ul{
 
 li{
     display: flex;
+    cursor: pointer;
 } 
 
 li:hover{
