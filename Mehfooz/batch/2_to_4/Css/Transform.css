@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+h1,h2{
+    margin: 1rem;
+}
+
+.container_2d, .container_3d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  line-height: 4;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: red;
+  transition: all 0.3s ease;
+}
+
+.translate:hover {
+  transform: translate(20px, 100px);
+}
+.rotate:hover {
+  transform: rotate(180deg);
+}
+.skew:hover {
+  transform: skew(20deg, 50deg);
+}
+.scale:hover {
+  transform: scale(1.6);
+}
+
+body {
+  height: 100vh;
+}
+
+.parent {
+  position: relative;
+  height: 80vh;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  background: teal;
+  border: 2px solid red;
+  transform: translate(-50%, -50%);
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background: tomato;
+  position: absolute;
+   top: 50%;
+  left: 50%; 
+
+  transform: translate(-50%, -50%);
+}
+
+
+/* 3d transfrom */
+
+.container_3d{
+    perspective: 600px;
+}
+
+.translate3d:hover{
+    transform: translate3d(40px,80px,100px);
+}
+
+.rotateX:hover{
+    transform: rotate3d(7,0,2,180deg);
+}
+
+.skew3d:hover{
+    transform: skewX(10deg);
+    transform: skewY(10deg);
+    transform: skew(20deg,30deg);
+}
+
+.scale3d:hover{
+    transform: scale3d(2.5,3.5,5);
+}
+
+
