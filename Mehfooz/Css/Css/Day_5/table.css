@@ -1,0 +1,8 @@
+table{
+    border: 2px outset rgb(0,0,0);
+}
+
+tr, th, td{
+    border: 1px inset rgb(0,0,0);
+    padding: 1px;
+}

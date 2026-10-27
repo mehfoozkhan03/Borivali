@@ -1,0 +1,46 @@
+/* external css */
+
+h1 {
+  color: aqua;
+  background-color: tomato;
+  margin: 0;
+  padding: 0;
+
+  /* border */
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+
+  border-radius: 100%;
+
+  text-align: center;
+
+  width: fit-content;
+
+  /* 
+  * margin
+
+  margin: 10px [... take all the side and put 10-px]
+
+  margin: 10px 20px 30px 40px  [ top | right | bottom | left ]
+
+  margin: 10px 20px [x{top - bottom} | y{left - right}]
+
+  margin: 10px 20px 10px [ top | y{left - right} | bottom ]
+
+
+  ! padding...
+
+  padding: 10px [... take all the side and put 10-px]
+
+  padding: 10px 20px 30px 40px  [ top | right | bottom | left ]
+
+  padding: 10px 20px [x{top - bottom} | y{left - right}]
+
+  padding: 10px 20px 10px [ top | y{left - right} | bottom ]
+  
+  */
+
+  padding: 20px 10px;
+  margin: 0 10px;
+}

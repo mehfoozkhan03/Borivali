@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .parent { */
+/* background: greenyellow; */
+
+/* left, right, inline-start, inline-end*/
+/* float: none; */
+/* } */
+
+/* display:flow-root */
+
+.parent::after{
+    content: "";
+    display: block;
+    clear: both;
+    /* display: ; */
+}
+
+
+.parent {
+ border: 2px solid black;
+ /* display: flow-root; */
+ /* height: 20px; */
+
+  /*float: none; /* left, right, inline-start, inline-end*/
+
+  /*! display with float */
+
+  /* display: flow-root; */
+}
+
+
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    text-align: center;
+    line-height: 3;
+    float: right;
+}

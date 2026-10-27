@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+
+div {
+  width: 45%;
+  height: 500px;
+  padding: 20px;
+  border: 5px solid red;
+  column-count: 3;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+p {
+  background: tan;
+  font-size: 30px;
+  height: 400px;
+}
+
+.pretty {
+  text-wrap-style: pretty;
+}
+
+.stable {
+  text-wrap-style: stable;
+}
+

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* div{
+    margin: 2rem;
+    border:2px solid red;
+    height: 90vh;
+    overflow-y: scroll;
+} */
+
+
+
+.main{
+    display: flex;
+    padding: 2rem;
+    gap: .3rem;
+    width: 100%;
+    border: 2px solid red;
+    overflow-x: scroll;
+    /* scrollbar-width: none; */
+    scroll-behavior: smooth;
+    scrollbar-width: auto;
+    scrollbar-color: red yellow;  
+}
+
+
+.box{
+    border: dashed black;
+    width:800px ;
+    height: 40vh;
+    flex-shrink: 0;
+}
+
+.child_1{
+    background: red;
+}
+.child_2{
+    background: green;
+
+}
+.child_3{
+    background: yellow;
+
+}
+.child_4{
+    background: tomato ;
+
+}
+.child_4{
+    background: teal;
+
+}
+.child_5{
+    background: thistle;
+
+}
+.child_6{
+    background: rebeccapurple;
+
+}
+.child_7{
+    background: darkcyan;
+
+}
+.child_8{
+    background: firebrick;
+
+}
+.child_9{
+    background: chocolate;
+
+}
+.child_10{
+    background: indianred;
+
+}

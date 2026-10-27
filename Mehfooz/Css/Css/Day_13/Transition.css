@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+
+  border: 2px solid red;
+}
+
+button {
+  background: tomato;
+  padding: 1rem 2rem;
+  margin: 1.5rem;
+  border: none;
+
+  width: 150px;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  background: teal;
+  cursor: pointer;
+  color: red;
+  width: 250px;
+  transition: all 0.5s e;
+}
+
+/* 
+transition: property duration time-function delay
+
+linear -> constant
+ease -> slow
+ease-in -> start slow - end fast 
+ease-out -> start fast end slow 
+ease-in-out -> slow fast slow
+
+*/

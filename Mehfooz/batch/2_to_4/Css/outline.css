@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  /* border-width: 2px ;
+    border-style: solid;
+    border-color: red; */
+
+  text-align: center;
+  border: 4px solid red;
+  border-radius: 50px;
+  /*margin: 10px 20px;*/ /* two  value x[top, bottom] y[left, right] */
+  /* margin: 10px 2px 5px 9px;*/ /* top right bottom left */
+
+  /* margin: 5px 0 10px; */
+  margin: 20px;
+  padding: 15px;
+
+  /* outline-color:gray ;
+    outline-style: dashed;
+    outline-width: 4px; */
+  outline: 4px dashed gray;
+  outline-offset: -10px;
+}

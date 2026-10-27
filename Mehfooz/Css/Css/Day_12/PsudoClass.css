@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background: aqua;
+  color: blueviolet;
+}
+
+span:hover {
+  /* background-color: black; */
+  color: red;
+}
+a {
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: orangered;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active{
+    color: black;
+}
+
+button {
+  margin-left: 2rem;
+}
+
+button:active {
+  color: red;
+  transition: all 0.3s ease-in;
+  transform: scale(2);
+}
+
+input:focus {
+  border: 2px solid purple;
+  outline: none;
+}
