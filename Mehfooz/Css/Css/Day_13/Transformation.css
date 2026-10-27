@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+
+div {
+  border: 3px solid black;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  gap:20px;
+
+  & > .box {
+    width: 200px;
+    height: 100px;
+    background: rebeccapurple;
+    margin: 2px;
+  }
+}
+
+.child_1:hover{
+  transform: rotate(90deg);
+  /* transform: rotateX(180deg); */
+  /* transform: rotateY(180deg); */
+  transition: all 1.5s ease;
+  /* perspective: 600px; */
+}
+
+
+.child_2{
+    transform: scale(1);
+    /* transition: all 1.5s ease; */
+}
+
+.child_2:hover{
+    transform: scale(0.5,3);
+    /* transform: rotate(90deg); */
+    transition: all 1.5s ease;
+}
+
+
+
+.child_3:hover{
+    transform: skew(180deg);
+    transition: all 1.5s ease;
+}

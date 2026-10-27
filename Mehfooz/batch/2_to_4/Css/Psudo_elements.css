@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1::before {
+  /* display: flex;
+    flex-direction: column; */
+  content: "💕💕";
+}
+h1::after {
+  /* display: flex;
+    flex-direction: column; */
+  content: "💕💕";
+}
+
+/* p::first-letter,
+div::first-letter {
+  border: 2px solid green;
+  color: green;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: capitalize;
+} */
+
+p
+{
+width: 50px;
+
+}
+p::first-line{
+color: red;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    width: 50%;
+    margin: auto;
+}
+
+li{
+    list-style: disc;
+}
+
+
+li::marker{
+    color: red;
+}
+
+body::selection{
+    background: aquamarine;
+}

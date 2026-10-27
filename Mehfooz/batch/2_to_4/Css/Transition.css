@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* 
+p:first-of-type
+p:last-of-type
+
+p:nth-of-type(3) {
+  border: 2px solid red;
+
+  padding: 10px;
+}
+ */
+
+/* a:focus{
+    color: blueviolet;
+ } */
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+span {
+  width: 0px;
+  height: 2px;
+  background-color: rebeccapurple;
+  transition: all 0.4s ease-in-out 0.4s;
+  border-radius: 10px;
+}
+
+h4:hover + span {
+    background-color: tomato;
+    color: aqua;
+    width: 34px;
+    transition: all 0.6s ease-in-out 0.4s;
+  }
+
+
+/*span:hover {
+  display: block;
+  background-color: tomato;
+  color: aqua;
+  width: 34px;
+  transition: all 1s ease-in 0.4s;
+  /*  transition-property: background-color, color;
+  transition-delay:0.4s ;
+  transition-duration: 3s;
+  transition-timing-function: ease-in; 
+}*/

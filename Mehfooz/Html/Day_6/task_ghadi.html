@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghadi task</title>
+  </head>
+  <body>
+    <canvas
+      style="
+        border: 2px solid gray;
+        border-radius: 50%;
+        margin: auto auto;
+        display: block;
+      "
+      width="600"
+      height="600"
+      name="canva_design"
+      id="canvas"
+    ></canvas>
+    <script>
+      // setting-up canvas
+      const canvas = document.querySelector("#canvas");
+      const dis = canvas.getContext("2d");
+
+      // circle
+
+      dis.fillStyle = "gray";
+      dis.arc(300, 300, 5, 0, 2 * Math.PI);
+      dis.fill();
+
+      // line
+      dis.beginPath();
+      dis.moveTo(300, 300);
+      dis.lineTo(380, 150);
+      dis.strokeStyle = "gray";
+      dis.strokeWidth = 10;
+      dis.stroke();
+
+      // line
+      dis.beginPath();
+      dis.moveTo(300, 300);
+      dis.lineTo(300, 20);
+      dis.strokeStyle = "gray";
+      dis.strokeWidth = 10;
+      dis.stroke();
+    </script>
+  </body>
+</html>

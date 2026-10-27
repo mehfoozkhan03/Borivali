@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 2px solid red;
+  padding: 10px;
+  background-color: tomato;
+  height: 100vh;
+}
+
+.sub_parent {
+  border: 2px dashed green;
+  background-color: bisque;
+  padding: 10px;
+  position: relative;
+  height: 50vh;
+}
+
+.child {
+  border: 2px outset blueviolet;
+  padding: 3px;
+  background-color: burlywood;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}

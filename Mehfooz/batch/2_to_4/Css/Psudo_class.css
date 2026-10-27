@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: red;
+    color: #fff;
+    height:20vh;
+    text-align: center;
+    line-height: 2;
+
+    &:hover{
+        background: blue;
+        color: rosybrown;
+    }
+
+}
+
+
+input{
+    border-radius: 6px;
+    /* border: 2px solid red !important; */
+    &:active{
+        border:2px dashed green !important;
+        outline: none;
+    }
+}
+
+button{
+    margin-left: 3rem;
+    &:active{
+        border: 2px solid red;
+        transform: scale(3);
+    }
+}
+
+/* 
+
+l 
+v
+h
+a
+
+*/
+
+
+a:link{
+    color: red ;
+    text-decoration: none;
+}
+
+a:visited{
+    color: orange;
+}
+
+a:hover{
+    color: green ;
+}
+a:active{
+    color: black ;
+}

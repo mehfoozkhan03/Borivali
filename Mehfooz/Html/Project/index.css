@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* nav style */
+nav {
+  height: 65px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+
+/* first div style */
+
+#home > nav > div:first-child {
+  display: inherit;
+  align-items: inherit;
+  gap: 5px;
+  cursor: pointer;
+
+  /* text size */
+
+  & > h3 {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+
+  /* target img tag's */
+  & > img {
+    width: 50px;
+    height: fit-content;
+  }
+
+  /* second child */
+
+  & + ul {
+    display: inherit;
+    align-items: inherit;
+    gap: 13px;
+    cursor: pointer;
+
+    & > li > span {
+      font-size: 2rem !important;
+    }
+  }
+}

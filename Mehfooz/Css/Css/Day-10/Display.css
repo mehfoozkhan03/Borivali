@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*! display content */
+/* span {
+  background: red;
+  display: contents;
+}
+
+div i {
+  color: green;
+} */
+
+/* ! display inline ||  display block  */
+
+div {
+  /* display: inline; */
+  background: yellow;
+}
+
+h4 {
+  background: red;
+  display: inline-block;
+}
+
+h6 {
+  background: green;
+  /* display: inline; */
+  display: inline-block;
+}
+
+nav {
+  border: 2px solid red;
+  background: green;
+}
+
+nav > span,
+nav > div {
+  display: inline-block;
+  background: yellow;
+  height: 100px ;
+  width: 100px ;
+  margin: 10px;
+}
+
+/*!   */

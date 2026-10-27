@@ -1,0 +1,18 @@
+
+
+div{
+    background: red;
+    height: 100px;
+    width: 20%;
+    margin: 10px;
+}
+
+
+span{
+    display: inline-block;
+    background: green;
+    width: 20%;
+    height: 100px;
+    margin: 10px;
+    /* padding: 10px; */
+}

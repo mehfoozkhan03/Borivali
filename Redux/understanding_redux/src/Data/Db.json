@@ -1,0 +1,204 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "age": 25,
+      "email": "rahul.sharma@example.com",
+      "phone": "+91-9876543210",
+      "city": "Mumbai",
+      "jobTitle": "Frontend Developer",
+      "profileImage": "https://i.pravatar.cc/150?img=12"
+    },
+    {
+      "id": 2,
+      "name": "Priya Patel",
+      "age": 27,
+      "email": "priya.patel@example.com",
+      "phone": "+91-9876543211",
+      "city": "Ahmedabad",
+      "jobTitle": "UI/UX Designer",
+      "profileImage": "https://i.pravatar.cc/150?img=47"
+    },
+    {
+      "id": 3,
+      "name": "Amit Verma",
+      "age": 29,
+      "email": "amit.verma@example.com",
+      "phone": "+91-9876543212",
+      "city": "Delhi",
+      "jobTitle": "Backend Developer",
+      "profileImage": "https://i.pravatar.cc/150?img=13"
+    },
+    {
+      "id": 4,
+      "name": "Sneha Gupta",
+      "age": 24,
+      "email": "sneha.gupta@example.com",
+      "phone": "+91-9876543213",
+      "city": "Pune",
+      "jobTitle": "Software Tester",
+      "profileImage": "https://i.pravatar.cc/150?img=44"
+    },
+    {
+      "id": 5,
+      "name": "Arjun Mehta",
+      "age": 31,
+      "email": "arjun.mehta@example.com",
+      "phone": "+91-9876543214",
+      "city": "Bengaluru",
+      "jobTitle": "Full Stack Developer",
+      "profileImage": "https://i.pravatar.cc/150?img=14"
+    },
+    {
+      "id": 6,
+      "name": "Neha Singh",
+      "age": 26,
+      "email": "neha.singh@example.com",
+      "phone": "+91-9876543215",
+      "city": "Jaipur",
+      "jobTitle": "Product Manager",
+      "profileImage": "https://i.pravatar.cc/150?img=45"
+    },
+    {
+      "id": 7,
+      "name": "Vikram Joshi",
+      "age": 28,
+      "email": "vikram.joshi@example.com",
+      "phone": "+91-9876543216",
+      "city": "Hyderabad",
+      "jobTitle": "DevOps Engineer",
+      "profileImage": "https://i.pravatar.cc/150?img=15"
+    },
+    {
+      "id": 8,
+      "name": "Ananya Desai",
+      "age": 23,
+      "email": "ananya.desai@example.com",
+      "phone": "+91-9876543217",
+      "city": "Surat",
+      "jobTitle": "Graphic Designer",
+      "profileImage": "https://i.pravatar.cc/150?img=46"
+    },
+    {
+      "id": 9,
+      "name": "Karan Malhotra",
+      "age": 30,
+      "email": "karan.malhotra@example.com",
+      "phone": "+91-9876543218",
+      "city": "Chandigarh",
+      "jobTitle": "Data Analyst",
+      "profileImage": "https://i.pravatar.cc/150?img=16"
+    },
+    {
+      "id": 10,
+      "name": "Pooja Reddy",
+      "age": 26,
+      "email": "pooja.reddy@example.com",
+      "phone": "+91-9876543219",
+      "city": "Chennai",
+      "jobTitle": "HR Executive",
+      "profileImage": "https://i.pravatar.cc/150?img=48"
+    },
+    {
+      "id": 11,
+      "name": "Rohit Kumar",
+      "age": 32,
+      "email": "rohit.kumar@example.com",
+      "phone": "+91-9876543220",
+      "city": "Kolkata",
+      "jobTitle": "Project Manager",
+      "profileImage": "https://i.pravatar.cc/150?img=17"
+    },
+    {
+      "id": 12,
+      "name": "Kavya Nair",
+      "age": 25,
+      "email": "kavya.nair@example.com",
+      "phone": "+91-9876543221",
+      "city": "Kochi",
+      "jobTitle": "Mobile App Developer",
+      "profileImage": "https://i.pravatar.cc/150?img=49"
+    },
+    {
+      "id": 13,
+      "name": "Aditya Mishra",
+      "age": 27,
+      "email": "aditya.mishra@example.com",
+      "phone": "+91-9876543222",
+      "city": "Lucknow",
+      "jobTitle": "Cloud Engineer",
+      "profileImage": "https://i.pravatar.cc/150?img=18"
+    },
+    {
+      "id": 14,
+      "name": "Isha Kapoor",
+      "age": 24,
+      "email": "isha.kapoor@example.com",
+      "phone": "+91-9876543223",
+      "city": "Indore",
+      "jobTitle": "Content Writer",
+      "profileImage": "https://i.pravatar.cc/150?img=50"
+    },
+    {
+      "id": 15,
+      "name": "Siddharth Rao",
+      "age": 33,
+      "email": "siddharth.rao@example.com",
+      "phone": "+91-9876543224",
+      "city": "Mysuru",
+      "jobTitle": "Engineering Manager",
+      "profileImage": "https://i.pravatar.cc/150?img=19"
+    },
+    {
+      "id": 16,
+      "name": "Meera Iyer",
+      "age": 28,
+      "email": "meera.iyer@example.com",
+      "phone": "+91-9876543225",
+      "city": "Coimbatore",
+      "jobTitle": "Business Analyst",
+      "profileImage": "https://i.pravatar.cc/150?img=51"
+    },
+    {
+      "id": 17,
+      "name": "Varun Chawla",
+      "age": 29,
+      "email": "varun.chawla@example.com",
+      "phone": "+91-9876543226",
+      "city": "Gurugram",
+      "jobTitle": "Cybersecurity Analyst",
+      "profileImage": "https://i.pravatar.cc/150?img=20"
+    },
+    {
+      "id": 18,
+      "name": "Riya Banerjee",
+      "age": 22,
+      "email": "riya.banerjee@example.com",
+      "phone": "+91-9876543227",
+      "city": "Bhopal",
+      "jobTitle": "Junior React Developer",
+      "profileImage": "https://i.pravatar.cc/150?img=52"
+    },
+    {
+      "id": 19,
+      "name": "Nikhil Shah",
+      "age": 30,
+      "email": "nikhil.shah@example.com",
+      "phone": "+91-9876543228",
+      "city": "Vadodara",
+      "jobTitle": "Database Administrator",
+      "profileImage": "https://i.pravatar.cc/150?img=21"
+    },
+    {
+      "id": 20,
+      "name": "Simran Kaur",
+      "age": 26,
+      "email": "simran.kaur@example.com",
+      "phone": "+91-9876543229",
+      "city": "Amritsar",
+      "jobTitle": "Digital Marketing Executive",
+      "profileImage": "https://i.pravatar.cc/150?img=53"
+    }
+  ]
+}
