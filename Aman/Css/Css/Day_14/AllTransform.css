@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_2d{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
