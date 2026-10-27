@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background: red;
+    text-align: center;
+    padding: 1rem;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    font-size: 2rem;
+}
+
+div > nav + p{
+    margin-top: 70px;
+    border: 1px solid black;
+
+    &>img{
+        height: 10rem;
+        position:sticky;
+        top: 20rem;
+        bottom: 20rem;
+        
+    }
+}

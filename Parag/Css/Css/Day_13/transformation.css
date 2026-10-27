@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 20px;
+
+    &>.box{
+        width: 200px;
+        height: 100px;
+        background: rebeccapurple;
+        margin: 10px;
+    }
+}
+
+.child_1:hover{
+    transform: rotate(40deg);
+    transition: all 1.5s ease-in-out;
+}
+
+.child_2:hover{
+    transform: scaleY(1.5);
+    transition: all 1.5s ease-in-out;
+}
+
+.child_3:hover{
+    transform: skew(250deg);
+    transition: all 1.5s ease-in-out;
+}
+

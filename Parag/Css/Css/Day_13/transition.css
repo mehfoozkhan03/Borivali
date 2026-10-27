@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background : tomato;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    width: 200px;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover{
+    background : green;
+    color: red;
+    width: 300px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+

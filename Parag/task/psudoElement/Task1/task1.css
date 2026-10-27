@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    /* justify-content: center; */
+    padding:1rem;
+    background: cyan;
+}
+
+div {
+    display: flex;
+    justify-content: left;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}

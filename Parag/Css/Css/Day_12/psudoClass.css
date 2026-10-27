@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background:aqua;
+    color:blueviolet;
+}
+
+span:hover{
+    /* background:black; */
+    color:red;
+}
+
+a{
+    margin: 10px;
+    display: inline-block;
+}
+
+a:visited{
+    color:red;
+}
+
+button{
+    margin:2rem
+}
+
+button:active{
+    color:red;
+    transition:all 0.2s ease-in;
+    transform:scale(2);
+}
+
+input:focus{
+    outline:none;
+    border:2px solid green;
+}
