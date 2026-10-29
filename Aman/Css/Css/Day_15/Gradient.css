@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.linear_gradient{
+    width: 100%;
+    height: 30vh;
+    margin: 1rem auto;
+
+    /* static way */
+    /* background: linear-gradient(to top, red, green, blue); */
+
+    /* digonal way */
+    /* background: linear-gradient(to bottom left, red, green, blue, tomato); */
+    
+    /* repeating linear gradient */
+    background: repeating-linear-gradient(50deg, red , green, blue, tomato);
+}
+
+.radial_gradient{
+    width: 100%;
+    height: 50vh;
+    margin: 1rem auto;
+
+    /* radial gradient */
+    /* background: radial-gradient(red 8%, green 17%, blue 28%, tomato 60%); */
+    background: radial-gradient(circle at 100%, red 0%, green 17%, blue 28%, tomato 60%);
+
+
+    /* repeating radial gradient */
+    /* background: repeating-radial-gradient(red 14%, green 20%, blue 24%, tomato 30%); */
+}
+
+.conic_gradient{
+    width: 100%;
+    height: 50vh;
+    margin: 1rem auto;
+
+    /* conic gradient */
+    /* background: conic-gradient(red,green, blue, yellow); */
+
+    /* repeating conic gradient */
+    background: repeating-conic-gradient( from 90deg, red 7%, green 8%, blue 8%, yellow 9%);
+}
