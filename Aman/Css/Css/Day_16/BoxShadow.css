@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 30%;
+    height: 30vh;
+    margin: 4rem auto;
+    background-color: tomato;
+
+    /* box-shadow: x-axis y-axis blur-radius spread-radius */
+    box-shadow: 20px 40px 20px 39px gray;
+    /* box-shadow: inset 20px 40px 20px 39px gray; */
+}
+
+h2 {
+    font-size: 10rem;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+
+    /* text-shadow: x-axis y-axis blur-radius */
+    text-shadow: 20px 40px 20px red;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: 4rem auto;
+
+    /* box-shadow: x-axis y-axis blur-radius */
+    filter: drop-shadow(20px 40px 4px gray);
+}

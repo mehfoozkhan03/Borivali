@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    width: 600px;
+    height: 500px;
+    margin: 4rem auto;
+
+    /* filter: blur(10px); */
+    /* filter: grayscale(1); */
+    /* filter: brightness(50%); */
+    /* filter:contrast(200%) ; */
+    /* filter:opacity(30%) ; */
+    /* filter: invert(1); */
+    /* filter: sepia(0.8); */
+    /* filter: blur(1px) saturate(200%) opacity(30%); */
+    filter: hue-rotate(30deg);
+
+
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover{
+    filter: none;
+}
