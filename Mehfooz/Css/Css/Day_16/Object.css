@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+
+    border: 5px solid red;
+    width: 300px;
+    height: 300px;
+    object-fit:contain;
+    object-position: right;
+}
+
