@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+ <!--.demo_1 .demo_child_1{
+        background-color: red;
+    }
+
+  .demo_2 .demo_child_2 > h1{
+    background-color: tomato;
+  }  -->
+
+ div + div{
+    background-color: aqua;
+ }
+
+
+
+
+</style>
+<body>
+    <!--combinators -->
+    <!--1. Descendent  {" "}-->
+    <!--2. child-- {" > "}-->
+    <!--3. sibling {" + "}-->
+    <!--4. subsibling{" ~ "}-->
+
+    <div class="demo_1">
+        <div>
+             <h1 class="demo_child_1">hello_1</h1>
+             <h1 class="demo_child_1">hello_2</h1>
+             <h1 class="demo_child_1">hello_3</h1>
+             <h1 class="demo_child_1">hello_4</h1>
+
+        </div>
+        
+
+    </div>
+
+    <div class="demo_2">
+        <div>
+             <h1 class="demo_child_2">hello_1</h1>
+             <h1 class="demo_child_2">hello_2</h1>
+             <h1 class="demo_child_2">hello_3</h1>
+             <h1 class="demo_child_2">hello_4</h1>
+
+        </div>
+       
+        
+
+    </div>
+
+    <!--3. sibling {" + "}-->
+    <div class="demo_1">
+        <h1>hello_1</h1>
+        <h1>hello_1</h1>
+    </div>
+
+     <div class="demo_2">
+        <h1>hello_1</h1>
+        <h1>hello_1</h1>
+    </div>
+
+     <div class="demo_3">
+        <h1>hello_1</h1>
+        <h1>hello_1</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+            background-color: #000;
+        }
+        body {
+            height: 100vh;
+            border-color: rebeccapurple;
+        }
+        
+        .parent {
+            display: flex;
+            height: 60vh;
+            width: 80%;
+            
+            /* justify stands for horizontal alignment [x axis alignments] */
+            justify-content: center;
+            justify-self: center;
+            /* justify-items: center; */ /* for grid */
+
+
+            /* align stands for vertical alignment [y axis alignments] */
+            
+            align-items: center;
+            /* align-content: center; */ /* for grid */
+
+            padding: .2rem 1rem;
+            /* flex-wrap: nowrap; */
+        }
+        
+        .box {
+            /* align-self: center; */
+            
+            width: 100px;
+            /* flex-shrink: 0; */
+            height: 100px;
+            background-color: rebeccapurple;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child_1 box"></div>
+        <div class="child_2 box"></div>
+        <div class="child_3 box"></div>
+        <div class="child_4 box"></div>
+        <div class="child_5 box"></div> 
+    </div>
+
+</body>
+
+</html>
