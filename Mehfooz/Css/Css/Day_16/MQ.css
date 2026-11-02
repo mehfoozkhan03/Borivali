@@ -68,7 +68,7 @@ footer {
 }
 
 /* mobile */
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   body {
     height: 100%;
   }
@@ -88,6 +88,7 @@ footer {
 
   main > section {
     flex-direction: column;
+    width: 100% !important;
   }
 
   footer {
@@ -95,12 +96,21 @@ footer {
   }
 }
 
-@media (min-width: 321px) and (max-width: 748px) {
+@media (min-width: 321px) and (max-width: 768px) {
+
+  main > section{
+    flex-direction: column;
+    width: 60%;
+
+    &>*{
+      height: 100%;
+    }
+  }
 }
 
 /* 
 
-tablet 748px
+tablet 768px
 
 L 1024px
 
