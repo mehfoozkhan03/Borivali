@@ -9,26 +9,32 @@ nav{
     background-color: aqua;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    gap: 60vw;
 }
 
 ul{
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-li{
-    display: flex;
+li {
+    display: inline-block;
+    position: relative;
     cursor: pointer;
-} 
-
-li:hover{
-    color: red;
 }
 
-li::before{
+li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+}
 
-    content: -2;
+li:hover::after {
+    transform: scaleX(1);
 }
