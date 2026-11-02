@@ -51,10 +51,12 @@ main > section {
 
   & > :first-child {
     background: rebeccapurple;
+    padding: 0.5rem;
   }
 
   & > :last-child {
     background: tomato;
+    padding: 0.5rem;
   }
 }
 
@@ -65,26 +67,43 @@ footer {
   background: grey;
 }
 
+/* mobile */
 @media (max-width: 320px) {
+  body {
+    height: 100%;
+  }
+
+  header {
+    height: 10vh;
+  }
+
   main {
     flex-direction: column;
-    height: 100% ;
-    & >*{
-        height: 30% ;
-    }
+    /* height: 60vh; */
   }
 
   main > aside {
     width: 100%;
-    
   }
 
   main > section {
     flex-direction: column;
-
   }
 
   footer {
-    height: 100%;
+    height: 30vh;
   }
 }
+
+@media (min-width: 321px) and (max-width: 748px) {
+}
+
+/* 
+
+tablet 748px
+
+L 1024px
+
+xl 1440
+
+*/
