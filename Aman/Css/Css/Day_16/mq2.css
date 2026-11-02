@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Body */
+body {
+  height: 100vh;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  padding: 1rem;
+  background: red;
+}
+
+/* Main */
+main {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+/* Aside */
+main > aside {
+  background: green;
+  padding: 0.4rem;
+}
+
+/* Section */
+main > section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+main > section > :first-child {
+  background: rebeccapurple;
+  padding: 0.5rem;
+}
+
+main > section > :last-child {
+  background: tomato;
+  padding: 0.5rem;
+}
+
+/* Right Side */
+main > :last-child {
+  background: palevioletred;
+}
+
+/* Footer */
+footer {
+  height: 30vh;
+  background: grey;
+}
+
+/* Mobile 320*/
+@media (max-width: 320px) {
+
+  body {
+    height: auto;
+  }
+
+  main {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  main > section {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    height: 20vh;    
+    padding: 1rem;
+  }
+}
+
+/* Tablet 768*/
+@media (min-width: 321px) and (max-width: 768px) {
+
+  main {
+    height: 60vh;
+    grid-template-columns: 10% 1fr 10%;
+  }
+
+  main > section {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    height: 20vh;
+    padding: 1rem;
+  }
+}
+
+/* Laptop 1024 */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  main {
+    height: 70vh;
+    grid-template-columns: 10% 1fr 10%;
+  }
+
+  main > section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    height: 20vh;
+    padding: 1rem;
+  }
+}
+
+/* XL Screen 1440*/
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+  main {
+    height: 60vh;
+    grid-template-columns: 10% 1fr 10%;
+  }
+
+  main > section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  footer {
+    height: 20vh;
+    padding: 1rem;
+  }
+}
+
+/* 1440px and up */
+@media (min-width: 1440px) {
+
+  main {
+    height: 60vh;
+    grid-template-columns: 10% 1fr 10%;
+  }
+
+  main > aside {
+    width: 100%;
+  }
+
+  main > section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    height: 20vh;
+    padding: 1rem;
+  }
+
+}
+

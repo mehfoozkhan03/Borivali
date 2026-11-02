@@ -51,7 +51,7 @@ main > section {
 
   & > :first-child {
     background: rebeccapurple;
-    padding: 0.5rem;
+    padding: -0.5rem;
   }
 
   & > :last-child {
@@ -92,16 +92,15 @@ footer {
 
   footer {
     height: 30vh;
+    padding: 1rem;
   }
 }
 
 /* Tablet */
 @media (min-width: 321px) and (max-width: 768px) {
-
-  main{
+  main {
     /* flex-direction: column; */
     height: 60vh;
-  
   }
 
   main > aside {
@@ -111,40 +110,48 @@ footer {
   main > section {
     flex-direction: column;
 
-    &>:first-child{
+    & > :first-child {
       height: 50vh;
     }
 
-    &>:last-child{
+    & > :last-child {
       height: 50vh;
     }
   }
 
-  footer{
+  footer {
     height: 20vh;
+    padding: 1rem;
   }
-
 }
 
 /* 1024 */
-@media (min-width:768) and (max-width:1024){
-  main{
+@media (min-width: 769) and (max-width: 1024) {
+  main {
     height: 70vh;
   }
 
-  main>aside{
+  main > aside {
     width: 20%;
   }
 
- 
+  footer {
+    height: 20vh;
+    padding: 1rem;
+  }
 }
+/* XL Screen 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  main {
+    height: 60vh;
+  }
 
-/* 
+  main > aside {
+    width: 20%;
+  }
 
-tablet 748px
-
-L 1024px
-
-xl 1440
-
-*/
+  footer {
+    height: 20vh;
+    padding: 1rem;
+  }
+}
