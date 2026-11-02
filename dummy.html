@@ -3,31 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>selectors</title>
+    <style>
+      /* h1{
+      color: blue;
+    } */
+      .heading_1 {
+        color: red;
+      }
+      #heading_2 {
+        color: green;
+      }
+      h1 {
+        color: blue;
+      }
+
+      /****  selector *****/
+
+      /* desendent  " " */
+
+      div h3 {
+        color: rebeccapurple;
+      }
+
+      /* child  {>}*/
+
+      div > span > h3 {
+        color: brown;
+      }
+
+      /* sibling (+)*/
+/* 
+      h6 + h5 {
+        color: yellowgreen;
+      } */
+
+      /* sub-sibling [~]*/
+      div ~ 
+      *{
+        color: aquamarine;
+      }
+    </style>
   </head>
   <body>
-    <q>hello</q>
-    <p>hello</p>
+    <h1>hello</h1>
+    <h1 class="heading_1">hello</h1>
+    <h1 id="heading_2">hello</h1>
 
-    <blockquote align="center">
-      <q
-        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores,
-        dicta.</q
-      >
-    </blockquote>
-
-    <bdo dir="rtl">hello</bdo>
-
-    <address width="30%">
-      Street: 9170 River Dr City: Charlotte State: NC ZIP Code: 28219
-    </address>
-
-    <p>
-      <abbr title="mehfooz">hello</abbr>
-      how are your?
-    </p>
-    dkvbdhvdh
-
-    dvsndvijsvij s
+    <div>
+      <span>
+        <h3>hello</h3>
+      </span>
+    </div>
+    <h6>h6</h6>
+    <h5>h5</h5>
   </body>
 </html>
