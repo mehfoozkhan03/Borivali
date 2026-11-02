@@ -39,16 +39,16 @@ main > section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.5rem;
-}
 
-main > section > :first-child {
-  background: rebeccapurple;
-  padding: 0.5rem;
-}
+  & > :first-child {
+    background: rebeccapurple;
+    padding: 0.5rem;
+  }
 
-main > section > :last-child {
-  background: tomato;
-  padding: 0.5rem;
+  & > :last-child {
+    background: tomato;
+    padding: 0.5rem;
+  }
 }
 
 /* Right Side */
@@ -64,7 +64,6 @@ footer {
 
 /* Mobile 320*/
 @media (max-width: 320px) {
-
   body {
     height: auto;
   }
@@ -79,14 +78,13 @@ footer {
   }
 
   footer {
-    height: 20vh;    
+    height: 20vh;
     padding: 1rem;
   }
 }
 
 /* Tablet 768*/
 @media (min-width: 321px) and (max-width: 768px) {
-
   main {
     height: 60vh;
     grid-template-columns: 10% 1fr 10%;
@@ -104,7 +102,6 @@ footer {
 
 /* Laptop 1024 */
 @media (min-width: 769px) and (max-width: 1024px) {
-
   main {
     height: 70vh;
     grid-template-columns: 10% 1fr 10%;
@@ -122,7 +119,6 @@ footer {
 
 /* XL Screen 1440*/
 @media (min-width: 1025px) and (max-width: 1440px) {
-
   main {
     height: 60vh;
     grid-template-columns: 10% 1fr 10%;
@@ -131,7 +127,7 @@ footer {
   main > section {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   footer {
     height: 20vh;
     padding: 1rem;
@@ -140,7 +136,6 @@ footer {
 
 /* 1440px and up */
 @media (min-width: 1440px) {
-
   main {
     height: 60vh;
     grid-template-columns: 10% 1fr 10%;
@@ -158,6 +153,4 @@ footer {
     height: 20vh;
     padding: 1rem;
   }
-
 }
-
