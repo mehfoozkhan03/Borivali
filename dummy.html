@@ -3,59 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>selectors</title>
-    <style>
-      /* h1{
-      color: blue;
-    } */
-      .heading_1 {
-        color: red;
-      }
-      #heading_2 {
-        color: green;
-      }
-      h1 {
-        color: blue;
-      }
-
-      /****  selector *****/
-
-      /* desendent  " " */
-
-      div h3 {
-        color: rebeccapurple;
-      }
-
-      /* child  {>}*/
-
-      div > span > h3 {
-        color: brown;
-      }
-
-      /* sibling (+)*/
-/* 
-      h6 + h5 {
-        color: yellowgreen;
-      } */
-
-      /* sub-sibling [~]*/
-      div ~ 
-      *{
-        color: aquamarine;
-      }
-    </style>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home,search,menu"
+    />
   </head>
-  <body>
-    <h1>hello</h1>
-    <h1 class="heading_1">hello</h1>
-    <h1 id="heading_2">hello</h1>
 
-    <div>
-      <span>
-        <h3>hello</h3>
-      </span>
-    </div>
-    <h6>h6</h6>
-    <h5>h5</h5>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        "FILL" 1,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+    }
+  </style>
+  <body>
+    <span class="material-symbols-outlined"> home </span>
+    <span class="material-symbols-outlined"> search</span>
+    <span class="material-symbols-outlined"> menu</span>
   </body>
 </html>
