@@ -4,24 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home,search,menu"
-    />
-  </head>
+    <style>
+      .parent {
+        width: 100%;
+        display: flex;
+        /* display: inline-block; */
+        background: red;
+        border: 2px solid green;
+        gap: 20px;
+        /* height: 90vh; */
+        /* overflow-x: scroll;
+        scrollbar-width: none; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center;
+        justify-self:center; */
+      }
 
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings:
-        "FILL" 1,
-        "wght" 400,
-        "GRAD" 0,
-        "opsz" 24;
-    }
-  </style>
+      .box {
+        display: block;
+        width: 200px;
+        height: 200px;
+        background: tomato;
+        /* flex-shrink: 0; */
+        /* align-self: center; */
+        /* margin: 10px; */
+      }
+
+      .child_1{
+        flex-grow: .1;
+      }
+      .child_2{
+        flex-grow: .3;
+      }
+      .child_3{
+        flex-grow: 0;
+      }
+      .child_4{
+        flex-grow: 1;
+      }
+
+
+    </style>
+  </head>
   <body>
-    <span class="material-symbols-outlined"> home </span>
-    <span class="material-symbols-outlined"> search</span>
-    <span class="material-symbols-outlined"> menu</span>
+    <div class="parent">
+      <span class="child_1 box">child_1</span>
+      <span class="child_2 box">child_2</span>
+      <span class="child_3 box">child_3</span>
+      <span class="child_4 box">child_4</span>
+    </div>
   </body>
 </html>
