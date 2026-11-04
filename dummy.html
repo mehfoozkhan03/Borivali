@@ -5,53 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .parent {
+      nav {
+        background: transparent;
         width: 100%;
-        display: flex;
-        /* display: inline-block; */
-        background: red;
-        border: 2px solid green;
-        gap: 20px;
-        /* height: 90vh; */
-        /* overflow-x: scroll;
-        scrollbar-width: none; */
-        /* flex-wrap: wrap; */
-        /* justify-content: center;
-        justify-self:center; */
+        height: 30vh;
+        border: 2px solid red;
       }
 
-      .box {
-        display: block;
+      nav::after,
+      nav::before {
+
+        content: "";
         width: 200px;
-        height: 200px;
-        background: tomato;
-        /* flex-shrink: 0; */
-        /* align-self: center; */
-        /* margin: 10px; */
+        height: 100px;
+        background: rebeccapurple;
+        display: block;
+        border: 2px solid  green;
+        clip-path: ellipse(130px 50px at 10% 20%);
       }
-
-      .child_1{
-        flex-grow: .1;
-      }
-      .child_2{
-        flex-grow: .3;
-      }
-      .child_3{
-        flex-grow: 0;
-      }
-      .child_4{
-        flex-grow: 1;
-      }
-
 
     </style>
   </head>
   <body>
-    <div class="parent">
-      <span class="child_1 box">child_1</span>
-      <span class="child_2 box">child_2</span>
-      <span class="child_3 box">child_3</span>
-      <span class="child_4 box">child_4</span>
-    </div>
+    <nav></nav>
   </body>
 </html>
