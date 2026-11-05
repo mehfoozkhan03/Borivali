@@ -3,30 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS ch vs ex Deep Dive Demonstration</title>
     <style>
-      nav {
-        background: transparent;
-        width: 100%;
-        height: 30vh;
-        border: 2px solid red;
+      :root {
+        --bg-color: #0f172a;
+        --card-bg: #1e293b;
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        --accent-ch: #38bdf8;
+        /* Cyan */
+        --accent-ex: #f43f5e;
+        /* Rose */
       }
 
-      nav::after,
-      nav::before {
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        margin: 2rem;
+        line-height: 1.5;
+      }
 
-        content: "";
-        width: 200px;
-        height: 100px;
-        background: rebeccapurple;
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+
+      p.intro {
+        color: var(--text-muted);
+        margin-bottom: 2rem;
+        max-width: 600px;
+      }
+
+      /* Container layout */
+      .demo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+      }
+
+      .card {
+        background: var(--card-bg);
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid #334155;
+      }
+
+      /* Font configurations for comparison */
+      .proportional {
+        font-family: "Georgia", "Times New Roman", serif;
+        font-size: 24px;
+      }
+
+      .monospace {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 24px;
+      }
+
+      .section-title {
+        font-size: 1.1rem;
+        font-family: system-ui;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-muted);
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #334155;
+        padding-bottom: 0.5rem;
+      }
+
+      /* Target Element Styles */
+      .visual-box {
+        background: #0f172a;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 6px;
+        position: relative;
+      }
+
+      .label {
+        font-size: 0.8rem;
+        font-family: system-ui;
         display: block;
-        border: 2px solid  green;
-        clip-path: ellipse(130px 50px at 10% 20%);
+        margin-bottom: 0.5rem;
+        color: var(--text-muted);
       }
 
+      /* --- The CH unit visualizer --- */
+      .ch-container {
+        background: repeating-linear-gradient(
+          90deg,
+          #1e293b,
+          #1e293b 1ch,
+          #334155 1ch,
+          #334155 calc(1ch + 1px)
+        );
+        display: inline-block;
+        color: var(--accent-ch);
+        font-weight: bold;
+        padding: 0.25rem 0;
+        border-bottom: 3px solid var(--accent-ch);
+      }
+
+      /* --- The EX unit visualizer --- */
+      .ex-demo-text {
+        position: relative;
+        display: inline-block;
+      }
+
+      /* A pseudo-element matching exactly 1ex high */
+      .ex-demo-text::after {
+        content: "";
+        position: absolute;
+        left: 102%;
+        bottom: 0.25em;
+        /* approximate baseline adjustments */
+        height: 1ex;
+        width: 15px;
+        background-color: var(--accent-ex);
+        border-radius: 2px;
+      }
+
+      .badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        padding: 0.1rem 0.4rem;
+        border-radius: 4px;
+        font-family: system-ui;
+        margin-left: 0.5rem;
+      }
+
+      .badge-ch {
+        background: rgba(56, 189, 248, 0.2);
+        color: var(--accent-ch);
+      }
+
+      .badge-ex {
+        background: rgba(244, 63, 94, 0.2);
+        color: var(--accent-ex);
+      }
     </style>
   </head>
+
   <body>
-    <nav></nav>
+    <h1>Visualizing <code>ch</code> & <code>ex</code> Units</h1>
+    <p class="intro">
+      This demo renders both units at a large font size (24px) to clearly map
+      out how browsers derive layout values directly from the structural anatomy
+      of a font.
+    </p>
+    <div class="demo-grid">
+      <!-- COLUMN 1: PROPORTIONAL FONT -->
+      <div class="card proportional">
+        <div class="section-title">Proportional Font (Georgia)</div>
+        <!-- CH Demo -->
+        <div class="visual-box">
+          <span class="label"
+            >CH Unit Grid (10ch wide container):
+            <span class="badge badge-ch">Width = 10 zeros</span></span
+          >
+          <div class="ch-container">0000000000</div>
+          <div
+            style="
+              font-size: 0.9rem;
+              color: var(--text-muted);
+              margin-top: 0.5rem;
+            "
+          >
+            Notice how variable letters like
+            <span style="color: #fff">"iiiiiiiiii"</span> or
+            <span style="color: #fff">"WWWWWWWWWW"</span> won't align perfectly
+            to this grid.
+          </div>
+        </div>
+        <!-- EX Demo -->
+        <div class="visual-box">
+          <span class="label"
+            >EX Unit Track:
+            <span class="badge badge-ex">Height = Lowercase x</span></span
+          >
+          <span class="ex-demo-text">
+            AaBbC<span style="color: var(--accent-ex)">x</span>yZ
+          </span>
+          <div
+            style="
+              font-size: 0.9rem;
+              color: var(--text-muted);
+              margin-top: 0.5rem;
+            "
+          >
+            The rose block on the right matches the height of the lowercase "x"
+            precisely.
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
