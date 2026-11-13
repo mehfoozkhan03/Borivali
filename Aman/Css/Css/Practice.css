@@ -1,9 +1,36 @@
-div{
-    width: 100mm;
-    border: 2px solid red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:rgba(235, 79, 79, 0.664);
+    --primary-btn: yellow;
+}
+
+.container{
+    background: var(--primary);
+    color: var(--primary-btn);
+}
+
+.child{
+    color: red;
+}
+
+.child{
+    color: revert;
 }
 
 h1{
-    width: 50%;
-    border: 2px solid green;
+    border: 2px solid red;
+    font: italic bold 2.4rem arial;
+}
+
+.parent{
+    width: min(600px, 50%);
+    background: tomato;
+    height: 30vh;
+
+    border: 2px solid black;
 }

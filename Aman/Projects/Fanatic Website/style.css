@@ -151,7 +151,7 @@ a {
 .hero-note {
   position: absolute;
   z-index: 2;
-  left: 53%;
+  left: 49%;
   bottom: 35px;
   width: 24%;
   padding: 20px 22px;
@@ -161,11 +161,13 @@ a {
 }
 
 .quote-mark {
-  display: block;
-  color: #ffca24;
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 0.8;
+    position: absolute;
+    display: block;
+    color: #ffca24;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 0.8;
+    top: -20px;
 }
 
 .hero-note p {
