@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+      :root {
+        --primary: rgba(235, 79, 79, 0.664);
+        --primary-btn: #e6ff27;
+      }
+
+      .container {
+        background: var(--primary);
+        color: var(--primary-btn);
+      }
+
+      .child{
+        color: red;
+      }
+
+
+      .child{
+        color: revert;
+      }
+
+      h1 {
+        border: 2px solid red;
+
+        border-width: 2px;
+        border-style: solid;
+        border-color: red;
+
+        /* display: flex;
+
+        flex: 0 1 1; */
+
+        margin: 10px  50px;
+        margin: 10px  50px 30px 20px;
+
+        font: italic bold 2.4rem monospace ;
+      }
+
+
+      /* method's */
+
+      /* .parent{
+        width: calc(50% / 3);
+        height: 200px;
+        background: tomato;
+      } */
+
+
+      .parent{
+        width: min(600px,50%);
+        background: tomato;
+        height: 30vh;
+
+        border: 2px solid black;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="child">hello</div>
+    </div> -->
+
+    <!-- <h1>hello</h1> -->
+
+    <div class="parent"></div>
+        
+  </body>
+</html>
