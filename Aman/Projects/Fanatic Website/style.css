@@ -161,13 +161,13 @@ a {
 }
 
 .quote-mark {
-    position: absolute;
+    position: relative;
     display: block;
     color: #ffca24;
     font-size: 60px;
     font-weight: 800;
     line-height: 0.8;
-    top: -20px;
+    top: -40px;
 }
 
 .hero-note p {
@@ -199,6 +199,7 @@ a {
 
 .partner-strip {
   padding: 34px 27px;
+  filter: grayscale(1);
   background-color: #f7f7f8;
 }
 
