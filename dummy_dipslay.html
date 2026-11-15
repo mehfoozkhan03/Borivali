@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .parent {
+        /* border: 2px solid red; */
+        background-color: tomato;
+        width: 100%;
+        height: 50vh;
+        margin: 10rem 0;
+        position: relative; /* parent ko*/
+              }
+      .child {
+        background: teal;
+        width: 20vw;
+        height: 20vh;
+        top: 5rem;
+        left: 3rem;
+        position: absolute; /* child ko */
+        z-index:1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
