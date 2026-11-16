@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* 
 .container {
   margin: 50px;
   display: flex;
@@ -27,4 +28,40 @@
   width: 350px;
   height: 230px;
   background-color: blue;
+} 
+ */
+
+
+.container {
+  translate: -50% -50%;
+  top: 50%;
+  position: relative;
+  left: 50%;
 }
+
+.box1 {
+  position: absolute;
+  left: 52%;
+  top: 30px;
+  width: 250px;
+  height: 75px;
+  background-color: red;
+}
+
+.box2 {
+  position: absolute;
+  left: 50%;
+  top: 16vh;
+  width: 304px;
+  height: 70px;
+  background-color: green;
+}
+
+.box3 {
+  position: absolute;
+  left: 47%;
+  top: 27vh;
+  width: 385px;
+  height: 230px;
+  background-color: blue;
+} 
