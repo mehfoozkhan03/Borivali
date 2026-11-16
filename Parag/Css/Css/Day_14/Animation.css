@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  background: tomato;
+
+  padding: 1rem 0.3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 3rem;
+
+  /* animation */
+  animation-name: naina;
+  animation-duration: 3s;
+  animation-delay: .4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes naina {
+  from {
+    translate: 0 0;
+    /* scale: 0 1; */
+  }
+  to {
+    translate: 100vw 0;
+    /* scale: 0 2; */
+  }
+}

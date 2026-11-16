@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 4rem auto;
+    background-color: red;
+
+    /* box-shadow:x-axis y-axis blur-radius spread-radius color */
+    box-shadow: 10px 10px 20px 5px black;
+    /*  */
+}
+
+h2{
+    font-size: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color:aqua;
+    text-shadow: 10px 20px 20px black;
+}
+
+img{
+    display: block;
+
+    /* drop-shadow: x-axis y-axis blur-radius color */
+    filter: drop-shadow(20px 50px 30px black);
+    margin: 4rem auto;
+}

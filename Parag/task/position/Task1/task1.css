@@ -1,0 +1,45 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    height: 700px;
+    width: 650px;
+    margin: 80px auto 0;
+}
+
+.a {
+    position: absolute;
+    height: 420px;
+    width: 650px;
+    background-color: blue;
+    top: 240px;
+    left: 0;
+    z-index: 3;
+}
+
+.b {
+    position: absolute;
+    height: 280px;
+    width: 530px;
+    background-color: green;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.c {
+    position: absolute;
+    height: 200px;
+    width: 430px;
+    background-color: orangered;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}

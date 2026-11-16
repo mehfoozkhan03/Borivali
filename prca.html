@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: tomato;
+            --primary--btn: blue;
+        }
+
+        .container {
+            background: var(--primary);
+            color: var(--primary--btn);
+        }
+
+        .child {
+            color: yellow;
+            color: revert;
+        }
+
+        h1 {
+            border: 2px solid var(--primary);
+            border-width: 2px;
+            border-style: solid;
+            border-color: var(--primary);
+
+
+            margin: 10px 50px;
+            margin: 10px 50px 30px 20px;
+        }
+
+        .parent {
+            width: min(100%, 500px);
+            background: var(--primary);
+            height: 100px;
+            border: 2px solid var(--primary--btn);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"> </div>
+
+    <h1>hello world</h1>
+
+    <div class="parent"></div>
+
+
+</body>
+
+</html>
