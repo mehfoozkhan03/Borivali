@@ -79,9 +79,6 @@ console.log("calc:", calc)
 
 
 
-
-
-
 // 2. non-primitive
 
 /*
@@ -91,3 +88,30 @@ console.log("calc:", calc)
 4. date & regex 
 */ 
 //_______________________________________________________
+
+
+// 1. Function 
+
+// name-function
+/*
+var name = "Aman";
+console.log("name: global", name)
+
+function nameFunc(){
+    console.log("name: local", name)
+}
+
+nameFunc()
+*/
+
+
+// arrow Function
+/*
+const sum = (a, b) =>{
+    console.log(a + b);
+    // return a+b;
+}
+
+sum(4,6)
+*/
+
