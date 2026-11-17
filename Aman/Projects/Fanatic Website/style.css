@@ -81,6 +81,7 @@ a {
 }
 
 .hero-content {
+  padding: 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -141,8 +142,8 @@ a {
   & > img {
     position: relative;
     z-index: 1;
-    width: 78%;
-    height: 350px;
+    width: 62%;
+    height: 390px;
     object-fit: cover;
     border-radius: 12px;
   }
@@ -150,9 +151,9 @@ a {
 
 .hero-note {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   left: 49%;
-  bottom: 35px;
+  bottom: 85px;
   width: 24%;
   padding: 20px 22px;
   border-radius: 9px;
@@ -161,13 +162,13 @@ a {
 }
 
 .quote-mark {
-    position: relative;
-    display: block;
-    color: #ffca24;
-    font-size: 60px;
-    font-weight: 800;
-    line-height: 0.8;
-    top: -40px;
+  position: relative;
+  display: block;
+  color: #ffca24;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 0.8;
+  top: -40px;
 }
 
 .hero-note p {
@@ -186,12 +187,22 @@ a {
 
 .dot-pattern {
   position: absolute;
-  top: 30px;
-  right: 0;
+  top: 180px;
+  right: 78px;
   width: 100px;
-  height: 150px;
+  height: 124px;
   background-image: radial-gradient(#d8c9f7 2px, transparent 2px);
   background-size: 17px 17px;
+  /* background-color: #f7f7f8; */
+}
+
+.dot-bg {
+  position: absolute;
+  top: -21px;
+  z-index: -1;
+  right: -187px;
+  width: 490px;
+  height: 23rem;
   background-color: #f7f7f8;
 }
 
@@ -258,6 +269,8 @@ a {
 /* Creativity Section */
 
 .creativity-section {
+  margin-top: 70px;
+  margin-bottom: 80px;
   padding-top: 45px;
   padding-bottom: 90px;
   background-color: #f7f7f8;
@@ -320,31 +333,32 @@ a {
 }
 
 .gallery-main {
-  top: 0;
+  top: -110px;
   left: 0;
-  width: 52%;
-  height: 230px;
+  width: 50%;
+  height: 26rem;
 }
 
 .gallery-top {
-  top: 15px;
-  right: 0;
-  width: 38%;
-  height: 125px;
+  top: -78px;
+  right: 35px;
+  width: 31%;
+  height: 19rem;
 }
 
 .gallery-bottom-left {
-  bottom: -60px;
-  left: 18%;
-  width: 30%;
-  height: 105px;
+  bottom: -135px;
+  left: 33%;
+  width: 23%;
+  height: 7rem;
 }
 
 .gallery-bottom-right {
-  right: 0;
-  bottom: 0;
-  width: 38%;
-  height: 105px;
+  right: 43px;
+  top: 295px;
+  bottom: -68px;
+  width: 30%;
+  height: 11rem;
 }
 
 /* Projects Section */
@@ -391,6 +405,8 @@ a {
 
 .wide-feature {
   padding: 35px;
+  margin-top: 80px;
+  margin-bottom: 70px;
   background-color: #f7f7f8;
 }
 
@@ -398,10 +414,13 @@ a {
   display: flex;
   align-items: center;
   gap: 55px;
+  height: 18rem;
 
   & > img {
-    width: 42%;
-    height: 330px;
+    width: 35%;
+    position: relative;
+    top: -15px;
+    height: 30rem;
     object-fit: cover;
     border-radius: 12px;
   }
@@ -429,14 +448,21 @@ a {
 
 .blog-date {
   display: block;
-  margin-bottom: 13px;
-  color: #a1a1aa;
-  font-size: 9px;
+  margin-top: 15px;
+  color: black;
+  font-size: 10px;
   letter-spacing: 0.5px;
+  font-weight: bold;
 }
 
 .blog-card h3 {
   margin-bottom: 9px;
+}
+
+.blog-card p {
+  margin-top: 21px;
+  margin-bottom: 24px;
+  color: #555563;
 }
 
 .category-label {
@@ -448,7 +474,6 @@ a {
   color: #21a98e;
   font-size: 9px;
 }
-
 
 /* Said Section */
 
@@ -480,14 +505,13 @@ a {
 }
 
 .client-name {
-    text-align: right;
-    font-size: 13px;
-    font-weight: 600;
-    color: yellow;
-    margin-top: 15px;
-    margin-bottom: 0;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 600;
+  color: yellow;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
-
 
 /* Pricing Section */
 
@@ -522,6 +546,7 @@ a {
   color: #17172e;
   font-size: 22px;
   font-weight: 800;
+  padding: 0px 0px 0px 80px;
 }
 
 .price-description {
@@ -558,7 +583,6 @@ a {
   text-align: center;
 }
 
-
 /* Contact Section */
 
 .contact-section {
@@ -584,7 +608,7 @@ a {
 .contact-form textarea {
   width: 100%;
   padding: 13px 0;
-  border:1px solid #d8d8df;
+  border: 1px solid #d8d8df;
   outline: none;
   background-color: transparent;
   color: #17172e;
