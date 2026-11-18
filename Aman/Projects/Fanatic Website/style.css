@@ -172,7 +172,7 @@ a {
 }
 
 .hero-note p {
-  margin-top: 7px;
+  margin-top: -20px;
   margin-bottom: 10px;
   font-size: 11px;
   line-height: 1.7;
@@ -203,7 +203,7 @@ a {
   right: -187px;
   width: 490px;
   height: 23rem;
-  background-color: #e3e3e3;
+  background-color: #f4f4f4;
 }
 
 /* Partners strip */
@@ -211,7 +211,8 @@ a {
 .partner-strip {
   padding: 34px 27px;
   filter: grayscale(1);
-  background-color: #f7f7f8;
+  /* background-color: #f7f7f8; */
+  background-color: #f4f4f4;
 }
 
 .partner-list {
@@ -273,7 +274,7 @@ a {
   margin-bottom: 80px;
   padding-top: 45px;
   padding-bottom: 90px;
-  background-color: #f7f7f8;
+  background-color: #f4f4f4;
 }
 
 .creativity-content {
@@ -408,7 +409,7 @@ a {
   padding: 35px;
   margin-top: 80px;
   margin-bottom: 70px;
-  background-color: #f7f7f8;
+  background-color: #f4f4f4;
 }
 
 .wide-feature-content {
@@ -480,7 +481,7 @@ a {
 
 .said-section {
   padding: 45px;
-  background-color: #f7f7f8;
+  background-color: #f4f4f4;
 }
 
 .said-grid {
@@ -497,8 +498,19 @@ a {
   color: #ffffff;
 }
 
+.quote-mark-ss {
+  position: relative;
+  display: block;
+  color: #ffca24;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 0.8;
+  top: -47px;
+  left: 40%;
+}
+
 .said-card p {
-  margin-top: 10px;
+  margin-top: -20px;
   margin-bottom: 20px;
   color: #e0dfeb;
   font-size: 11px;
@@ -589,7 +601,7 @@ a {
 .contact-section {
   padding: 45px;
   height: 34rem;
-  background-color: #f7f7f8;
+  background-color: #f4f4f4;
 }
 
 .contact-content {
@@ -638,7 +650,7 @@ a {
   top: 0;
   left: 0;
   width: 40%;
-    height: 10rem;
+  height: 10rem;
 }
 
 .contact-image-two {
@@ -650,10 +662,10 @@ a {
 
 .contact-image-three {
   bottom: 0;
-    left: 0;
-    width: 40%;
-    height: 15rem;
-    top: 186px;
+  left: 0;
+  width: 40%;
+  height: 15rem;
+  top: 186px;
 }
 
 /* Footer Section */
@@ -681,4 +693,8 @@ a {
   margin-bottom: 0;
   color: #d1d0df;
   font-size: 10px;
+}
+
+.brand-name {
+    color: #007bff;
 }
