@@ -83,8 +83,22 @@ console.log("🚀~ calc:", calc);
 
 /* 
 1. Function
+    - name 
+    - arrow
+    - callback | anonymous 
 2. Array
 3. Object
 4. Date && Regex
 
 */
+
+// 1.  function
+
+// name-function
+
+var name_1 = "hello";
+console.log("🚀 ~ name_1:global", name_1);
+
+function nameFunc() {
+  console.log("🚀 ~ name_1:local", name_1);
+}
