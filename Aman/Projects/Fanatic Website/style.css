@@ -649,6 +649,7 @@ a {
 .primary-button-submit {
   display: inline-block;
   border-radius: 15px;
+  border: none;
   margin-top: 25px;
   padding: 12px 50px 12px 50px;
   width: 53%;
