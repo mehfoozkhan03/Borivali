@@ -33,15 +33,20 @@ console.log(typeof undefined); // 0
 
 // 4. Symbol
 
-var number_1 = Symbol("Rahul");// Axy56
+var number_1 = Symbol("Rahul"); // Axy56
 var number_2 = Symbol("Rahul"); // Azl00
 
 console.log(number_1 == number_2);
 
 // 5. BigInt
 
+var numB_1 = 826262718617126858n;
+console.log("🚀 ~ numB_1:", typeof numB_1);
+console.log("🚀 ~ numB_1:", numB_1 + 1n);
 
+function naam() {
+  let xyz="khan"
+}
 
-var numB_1= 826262718617126858n;
-console.log("🚀 ~ numB_1:", typeof numB_1)
-console.log("🚀 ~ numB_1:", numB_1 + 1n)
+console.log("global scope main ", xyz)
+naam()
