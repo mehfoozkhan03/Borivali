@@ -203,7 +203,7 @@ a {
   right: -187px;
   width: 490px;
   height: 23rem;
-  background-color: #f4f4f4;
+  background-color: #ebebeb;
 }
 
 /* Partners strip */
@@ -212,7 +212,7 @@ a {
   padding: 34px 27px;
   filter: grayscale(1);
   /* background-color: #f7f7f8; */
-  background-color: #f4f4f4;
+  background-color: #ebebeb;
 }
 
 .partner-list {
@@ -274,7 +274,7 @@ a {
   margin-bottom: 80px;
   padding-top: 45px;
   padding-bottom: 90px;
-  background-color: #f4f4f4;
+  background-color: #ebebeb;
 }
 
 .creativity-content {
@@ -409,7 +409,7 @@ a {
   padding: 35px;
   margin-top: 80px;
   margin-bottom: 70px;
-  background-color: #f4f4f4;
+  background-color: #ebebeb;
 }
 
 .wide-feature-content {
@@ -481,7 +481,7 @@ a {
 
 .said-section {
   padding: 45px;
-  background-color: #f4f4f4;
+  background-color: #ebebeb;
 }
 
 .said-grid {
@@ -601,7 +601,7 @@ a {
 .contact-section {
   padding: 45px;
   height: 34rem;
-  background-color: #f4f4f4;
+  background-color: #ebebeb;
 }
 
 .contact-content {
