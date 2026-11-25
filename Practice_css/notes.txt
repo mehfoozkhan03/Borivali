@@ -1,0 +1,28 @@
+1. CSS Unit's 
+
+-  clasification of css unit
+        - Absolute Units
+            - px, cm, mm, in, pt, pc
+        - Relative Units
+            - %, em, rem, vw, vh, vmin, vmax, ch, ex, dvh, svh, lvh
+
+
+# Absolute Units:- 
+    Absolute unit represent fixed measurement. They don't depend on the font size of the parent elements or the dimentions of a containing elements.
+
+    A. Pixels(PX)
+    B. Centimeter(CM)
+    C. Millemeter(MM)
+    D. Inches(IN)
+    E. Points(PT)
+    F. Picas(PC)
+    
+    
+# Relative Units:-    
+    A. 
+    B.
+    C.
+    D.
+    E.
+    F.
+ 

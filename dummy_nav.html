@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>facebook</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search,menu,home,storefront,flag_2,live_tv,add,arrow_drop_down,notifications"
+    />
+  </head>
+  <style>
+    :root {
+      --fb-color: #176be9;
+      --test: red;
+      --test2: green;
+      --icon-bg: #eff0f4;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        "FILL" 1,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 70;
+      color: #6c727a;
+      cursor: pointer;
+    }
+
+    .material-symbols-outlined:hover {
+      color: var(--fb-color);
+    }
+
+    nav {
+      /* border: 2px solid var(--test); */
+      border-radius: 10px;
+      width: 90%;
+      margin: 1rem auto;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.3rem 1rem;
+
+      & > * {
+        /* border: 2px solid var(--test2); */
+      }
+    }
+
+    section {
+      display: inherit;
+      align-items: inherit;
+      gap: 0.3rem;
+
+      &:nth-child(2) {
+        width: 50%;
+
+        justify-content: space-evenly;
+      }
+
+      &:last-child:last-child {
+        gap: 1.5rem;
+      }
+
+      &:last-child > * {
+        color: black !important;
+        font-size: 3rem;
+        width: 40px;
+      }
+    }
+
+    svg {
+      width: 100px;
+    }
+
+    .icon {
+      font-size: 3rem;
+      background: var(--icon-bg);
+      border-radius: 50%;
+      padding: 0.7rem;
+    }
+
+    .icon_sec_2 {
+      fill: var(--fb-color);
+      font-size: 5rem;
+    }
+  </style>
+  <body>
+    <nav>
+      <section class="child_1">
+        <!-- svg start -->
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)" />
+          <path
+            d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z"
+            fill="white"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_87_7208"
+              x1="16"
+              y1="2"
+              x2="16"
+              y2="29.917"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#18ACFE" />
+              <stop offset="1" stop-color="#0163E0" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="material-symbols-outlined icon"> search </span>
+        <!-- svg end -->
+      </section>
+      <section class="child_2">
+        <!-- home -->
+        <span class="material-symbols-outlined icon_sec_2"> home </span>
+
+        <!-- flag_2-->
+        <span class="material-symbols-outlined icon_sec_2"> flag_2</span>
+
+        <!-- live_tv-->
+        <span class="material-symbols-outlined icon_sec_2"> live_tv</span>
+
+        <!-- storefront-->
+        <span class="material-symbols-outlined icon_sec_2"> storefront</span>
+
+        <!-- menu -->
+        <span class="material-symbols-outlined icon_sec_2"> menu </span>
+      </section>
+      <section class="child_3">
+        <!-- add icon -->
+
+        <span class="material-symbols-outlined"> add </span>
+        <!-- messanger -->
+        <svg
+          fill="black"
+          viewBox="-1 0 226 226"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+        >
+          <defs>
+            <linearGradient id="a" y1="6.76%" x2="50%" x1="50%" y2="95.6%">
+              <stop stop-color="#00C6FF" offset="0" />
+              <stop stop-color="#0068FF" offset="1" />
+            </linearGradient>
+          </defs>
+          <path
+            fill="black"
+            d="m41.255 185.52v40.2l37.589-21.37c10.478 3.02 21.616 4.65 33.156 4.65 61.86 0 112-46.79 112-104.5 0-57.714-50.14-104.5-112-104.5-61.856 0-112 46.786-112 104.5 0 32.68 16.078 61.86 41.255 81.02z"
+          />
+          <path
+            fill="#ffffff"
+            d="m100.04 75.878l-60.401 63.952 54.97-30.16 28.721 30.16 60.06-63.952-54.36 29.632-28.99-29.632z"
+          />
+        </svg>
+
+        <!-- notification -->
+        <span class="material-symbols-outlined"> notifications </span>
+        <!-- down arrow -->
+        <span class="material-symbols-outlined"> arrow_drop_down </span>
+      </section>
+    </nav>
+  </body>
+</html>

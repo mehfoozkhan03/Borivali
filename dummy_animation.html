@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid red;
+
+        animation-name: logo;
+        animation-timing-function: linear;
+        animation-duration: 4s;
+        animation-delay: 0.5s;
+        /* animation-fill-mode: backwards; */
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        /* animation-play-state: ; */
+      }
+
+      img:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes logo {
+        0% {
+          transform: rotate(0deg);
+        }
+        /* 50% {
+            rotate: 180deg;
+            } */
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./Utils/react-svgrepo-com.svg" alt="react_img" />
+    </div>
+  </body>
+</html>

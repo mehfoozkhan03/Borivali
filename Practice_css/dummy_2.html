@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div{
+            color: rebeccapurple;
+            border: 5px solid rebeccapurple;
+        }
+
+        h1{
+            color: unset;
+            border: unset;
+        } */
+
+      div {
+        color: rebeccapurple;
+      }
+
+      h1 {
+        color: red;
+      }
+
+      h1 {
+        color: revert;
+      }
+      /* button k sath */
+
+      .btn_parent{
+        color: red;
+      }
+
+      .btn_1 {
+        all: initial;
+      }
+      .btn_2 {
+        all: revert;
+      }
+
+      /* color k sath */
+      .p_parent {
+        color: rebeccapurple;
+      }
+
+      .p_1 {
+        color: initial;
+      }
+      .p_2 {
+        color: revert;
+      }
+
+
+      /* display k sath  */
+
+      .display_initial{
+          background: red;
+          display: initial;
+          
+        }
+        
+        .display_revert{
+            display: revert;
+        color: initial;
+        background: rebeccapurple;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>hello world</h1>
+    </div>
+
+    <div` class="btn_parent">
+      <button class="btn_1">button 1</button>
+      <button class="btn_2">button 2</button>
+    </div>
+
+    <div class="p_parent">
+      <p class="p_1">hello every initial</p>
+      <p class="p_2">hello every revert</p>
+    </div>
+
+
+    <div class="display_initial">hello</div>
+    <div class="display_revert">hello</div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .linear {
+        width: 100%;
+        height: 50vh;
+        border: 2px solid red;
+        margin-bottom: 20px;
+
+        background: repeating-linear-gradient(
+          150deg,
+          red 50%,
+          green 55%,
+          blue 60%
+        );
+      }
+
+      .radial {
+        width: 100%;
+        height: 60vh;
+        border: 2px solid green;
+
+        /* background: radial-gradient(closest-side,red, green, blue); */
+        /* background: radial-gradient(closest-corner,red, green, blue); */
+        /* background: radial-gradient(farthest-side,red, green, blue); */
+        /* background: radial-gradient(farthest-corner,red, green, blue); */
+        /* background: radial-gradient(ellipse,red, green, blue); */
+        background: repeating-radial-gradient(
+          circle,
+          red 10%,
+          green 40%,
+          blue 27%
+        );
+      }
+
+      .conic {
+        width: 100%;
+        height: 60vh;
+        border: 2px solid blue;
+
+        background: conic-gradient(
+          from 45deg,
+          red,
+          blue,
+          green,
+          yellow,
+          rebeccapurple,
+          red
+        );
+
+        /* background: conic-gradient(
+          red,
+          blue,
+          green,
+          yellow,
+          rebeccapurple,
+          red
+        ); */
+      }
+
+      h1 {
+        /* color: rebeccapurple; */
+        font:
+          900 52rem "Franklin Gothic Medium",
+          sans-serif;
+        text-align: center;
+        text-transform: capitalize;
+
+        background: linear-gradient(to left top, tomato, rebeccapurple, yellow);
+        background-clip: text;
+        color: transparent;
+      }
+      /*   
+      wrong syntex
+      h1 {
+        font: bold 900 32rem Franklin Gothic Medium;
+      } 
+        
+      right
+
+      font: [font-style] [font-variant] [font-weight] [font-stretch] font-size[/line-height] font-family;
+
+      */
+    </style>
+  </head>
+  <body>
+    <h1>hello</h1>
+
+    <div class="linear"></div>
+    <div class="radial"></div>
+    <div class="conic"></div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      div {
+        background: #000;
+      }
+
+      h1 {
+        color: red;
+      }
+
+      h1:hover {
+        color: rebeccapurple;
+      }
+
+      div:hover {
+        background: tomato;
+      }
+
+      button {
+        padding: 1rem 2rem;
+        margin: 3rem;
+      }
+
+      button:focus {
+        color: blue;
+        border: 2px solid blue;
+        background: transparent;
+      }
+
+      button:active {
+        color: tomato;
+        border: 2px solid tomato;
+        background: transparent;
+      }
+
+      a {
+        list-style: none;
+      }
+
+      a:link {
+        color: teal;
+      }
+
+      a:visited {
+        color: rgb(219, 55, 18);
+      }
+
+      p::first-line {
+        color: tomato;
+      }
+      p::first-letter {
+        color: red;
+        text-transform: capitalize;
+        font-size: 3rem;
+      }
+
+      p::selection{
+        color: rebeccapurple;
+      }
+
+      h3::before ,h3::after{
+        content: "😂";
+      }
+
+    ul{
+        width: 50%;
+        margin: auto;
+    }
+    li{
+        list-style: circle;
+    }
+
+    li::marker{
+        color: red;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>hello world</h1>
+    </div>
+
+    <button>click</button>
+
+    <a href="https://snapchat.com" target="_blank">link</a>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem blanditiis
+      nemo quaerat a. Eveniet sapiente vel, corporis facilis suscipit molestias.
+    </p>
+
+    <h3>hello</h3>
+
+    <ul>
+        <li>home</li>
+        <li>contact</li>
+        <li>about</li>
+    </ul>
+  </body>
+</html>
