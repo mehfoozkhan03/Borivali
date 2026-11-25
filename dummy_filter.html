@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img{
+            /* filter: blur(100px); */
+            /* filter:brightness(50%); */
+            /* filter: contrast(10%) ; */
+            /* filter:invert(100%); */
+            /* filter:opacity(10%); */
+            /* filter:grayscale(0%); */
+            /* filter:saturate(0%); */
+            /* filter:sepia(0%); */
+            filter:hue-rotate(90deg);
+
+
+            transition: all .3s ease-in;
+        }
+
+
+        img:hover{
+            /* filter:grayscale(100%); */
+            /* filter:saturate(100%); */
+            /* filter:sepia(100%); */
+            filter:hue-rotate(360deg);
+        }
+
+    </style>
+  </head>
+  <body>
+    <img src="./Utils/pumpkin.jpg" alt="pumpkin" />
+  </body>
+</html>
