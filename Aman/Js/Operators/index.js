@@ -91,3 +91,47 @@ let flag4 = true
 
 ans = flag3 && !flag4
 console.log("ans:", ans)
+
+
+// 4. Comparision
+
+/* 
+
+  1. == -> data value comp 
+
+ 
+  2. === -> data type and data value comp
+
+  3. < -> less
+
+  4. > -> greater
+
+  5. <=  -> less then eql
+
+  6. >= -> greater then eql
+
+  7. != -> not eql
+
+  8. !== -> not double eql
+
+
+*/
+
+let number_1 = 23;
+let number_2 = 23;
+
+const ans_1 = number_1 == number_2;
+
+console.log("ans_1", ans_1); // value
+
+const ans_3 = number_1 === number_2; // value && type
+console.log("🚀 ~ ans_3:", ans_3);
+
+const ans_4 = (23 === "23" && "name" == "name") || [];
+console.log("🚀 ~ ans_4:", ans_4); // D-false | P-false | A-true
+
+const num_1 = 55;
+
+const num_2 = "55";
+
+console.log("ans",num_1 !== num_2);
