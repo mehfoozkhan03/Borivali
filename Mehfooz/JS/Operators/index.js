@@ -121,4 +121,26 @@ const num_1 = 55;
 
 const num_2 = "55";
 
-console.log("ans",num_1 !== num_2);
+console.log("ans", num_1 !== num_2);
+
+// conversion
+
+let x = "M";
+// console.log("🚀 ~ x:",typeof x)
+
+const conv = Number(x);
+console.log("🚀 ~ conv:", conv);
+
+let y = 2 + conv;
+console.log("🚀 ~ y:", y);
+
+let decNum = 304;
+
+const convToBin = decNum.toString(2);
+
+console.log("🚀 ~ convToBin:", convToBin);
+
+let binNum = "1100100";
+
+const convToDec = parseInt(binNum, 2);
+console.log("🚀 ~ convToDec:", convToDec);
