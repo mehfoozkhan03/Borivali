@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+        text-transform: capitalize;
+        color: #fff;
+
+        /* font */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      /* body */
+      body {
+        border: 0.3rem solid black;
+        margin: 0.2rem;
+        padding: 0.2rem;
+      }
+
+      /* navbar started */
+
+      header {
+        border: 1px solid black;
+        background: red;
+        padding: 2rem;
+      }
+
+      nav {
+        border: 1px solid black;
+        background: navy;
+        padding: 1.1rem;
+        margin-top: 0.4rem;
+      }
+
+      /* navbar ended */
+
+      /* main started */
+
+      main {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: row-reverse;
+        margin: 0.4rem 0;
+        gap: 0.4rem;
+
+        /* main first child */
+
+        & > section:first-child {
+          background: rebeccapurple;
+          width: 50%;
+          border: 0.1rem solid black;
+          line-height: 8;
+        }
+
+        /* main last || second child */
+
+        & > section:last-child {
+          width: 50%;
+          /* background: tomato; */
+
+          & > :is(p) {
+            background: tan;
+            padding: 1rem;
+            border: 0.1rem solid black;
+          }
+
+          & > :is(article) {
+            background: coral;
+            padding: 1rem;
+            border: 0.1rem solid black;
+            margin-top: 0.4rem;
+          }
+        }
+      }
+      /*
+      main > section:first-child {
+        height: min-content;
+        background: rebeccapurple;
+        width: 50%;
+      }
+      main > section:last-child {
+        background: tomato;
+        width: 50%;
+      } */
+
+      /* main ended */
+
+      /* footer start  */
+
+      footer {
+        background: teal;
+        padding: 1.8rem;
+        border: 0.1rem solid black;
+      }
+
+      /* footer end  */
+
+      /* media query */
+
+      @media (max-width: 320px) {
+        * {
+          font-weight: 300;
+        }
+
+        main {
+          flex-direction: column;
+          /* border: 2px solid red; */
+
+          & > section:first-child {
+            width: 100%;
+          }
+          & > section:last-child {
+            width: 100%;
+          }
+        }
+      }
+
+      @media (min-width: 321px) and (max-width: 780px) {
+      }
+
+      /* 
+      
+      
+      mobile 0 <= 480px
+
+      tablet 780px
+
+      large screen 1024 
+
+      XL 1440 <=
+      
+      */
+    </style>
+  </head>
+  <body>
+    <!-- layout -->
+    <header>header</header>
+    <nav>nav</nav>
+
+    <main>
+      <section>
+        <aside>aside</aside>
+      </section>
+
+      <section>
+        <p>lorem one two three</p>
+        <article>lorem article tag</article>
+      </section>
+    </main>
+    <footer>footer</footer>
+  </body>
+</html>
